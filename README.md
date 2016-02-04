@@ -24,7 +24,7 @@ The documentation for Trails is translated to an number of different languages. 
   * [Concepts](concepts/README.md)
   * Core Components
   * Examples
-  * User Guides
+  * [User Guides](/user-guides/README.md)
 * Trailpack Docs
   * [Official Trailpack](trailpack/official/README.md)
   * Community Trailpack

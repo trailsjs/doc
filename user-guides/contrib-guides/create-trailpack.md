@@ -47,10 +47,12 @@ Steps to personalized your trailpack are in following order:
 . License
 
 After this, the generator will create your project structure and install dependancies (`npm install`).
+
 ![Project generated](/assets/img/tutoYoTrailpack1.png)
 
 ## Project structure
 You should see something like this :
+
 ![Project structure](/assets/img/tutoYoTrailpack2.png)
 
 ### API

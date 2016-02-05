@@ -253,5 +253,7 @@ Now you are ready to create some new cool Trailpacks ! But don't waste your time
 
 See you guys later !
 
-LiCENSE MIT
+### LICENSE
+
+[MIT](LICENSE)
 created by @jaumard

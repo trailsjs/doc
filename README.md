@@ -3,6 +3,8 @@ Trails Documentation
 [![Gitter][gitter-image]][gitter-url]
 [![Issue Stats][issuestats-image]][issuestats-url]
 [![Issue StatsPR][issuestatspr-image]][issuestatspr-url]
+[![npm](https://img.shields.io/npm/dm/trails.svg?style=flat-square)](https://www.npmjs.com/package/trails)
+[![npm](https://img.shields.io/npm/l/trails.svg?style=flat-square)](https://www.npmjs.com/package/trails)
 
 The official documentation for the current stable release of Trails is on the master branch.
 

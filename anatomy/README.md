@@ -6,4 +6,4 @@ This folder describe the anatomy of Trails
 
 ### Path: 
 
-> [TrailsProject/](./trailsProject/ReadME.md)
+> [TrailsProject/](./trailsProject/README.md)

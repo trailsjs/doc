@@ -25,7 +25,7 @@ This is the place where you have launch the ```yo trails``` command
 > .trailsrc
 
 > index.js
-`
+
 > LICENCE
 
 > package.json

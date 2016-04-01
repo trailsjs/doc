@@ -9,10 +9,10 @@
 In the root project directory.
 
 This is the place where you have launch the ```yo trails``` command
- 
-### Path: 
 
-> api/
+### Path:
+
+>  [api/](api/README.md)
 
 > config/
 

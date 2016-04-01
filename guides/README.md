@@ -1,7 +1,7 @@
 # User-Guides
 ## Introduction
 
-In most of case things are more compréhensible and more
+In most of case things are more easier when there is a tutorial for your needs
 
 ## Table of Contents
 

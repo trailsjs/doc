@@ -4,7 +4,9 @@ Trails Documentation
 [![Issue Stats][issuestats-image]][issuestats-url]
 [![Issue StatsPR][issuestatspr-image]][issuestatspr-url]
 [![npm](https://img.shields.io/npm/dm/trails.svg?style=flat-square)](https://www.npmjs.com/package/trails)
+[![Inline docs](http://inch-ci.org/github/trailsjs/trails.svg?branch=master)](http://inch-ci.org/github/trailsjs/trails)
 [![npm](https://img.shields.io/npm/l/trails.svg?style=flat-square)](https://www.npmjs.com/package/trails)
+
 
 The official documentation for the current stable release of Trails is on the master branch.
 

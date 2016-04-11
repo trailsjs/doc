@@ -1,6 +1,7 @@
 # Getting Started
 
-The Getting page covers how to start a Trails app from scratch.
+The Getting page covers how to start a Trails app from scratch.<br>
+For a more detailed getting started tutorial please folow : [Detailled instructions](/guides/framework/getting-started.md)
 
 ## First Step : Installation
 Please follow the [installation Guide](installation.md).

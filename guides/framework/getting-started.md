@@ -58,7 +58,7 @@ After this the generator will create your project structure and install dependan
 
 Like the yeoman generator instructs, you only need to do :
 
-`npm start`
+`node server.js`
 
 Your server should now be running on port 3000, and you should see on your console :
 

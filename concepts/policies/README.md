@@ -22,8 +22,18 @@ An other example can be a processing before access the controller, like refreshT
 
 ## How to use it in Trails
 
+### Fastest Way : Use Yeoman
+
+```Bash
+  yo trails:policy ExamplePolicy
+```
+
+This will auto create and load to the framework the policy class that you want.
+With Yeoman you can avoid the Second Step and the generation of the First Step Class.
 
 ### First Step : Write your policy
+
+#### 1 - Using Hapi
 
 ```JavaScript
   'use strict'

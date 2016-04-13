@@ -28,10 +28,11 @@ An other example can be a processing before access the controller, like refreshT
   yo trails:policy ExamplePolicy
 ```
 
-This will auto create and load to the framework the policy class that you want.
-With Yeoman you can avoid the Second Step and the generation of the First Step Class.
+With Yeoman you don't need to create the file and include it in index.js
 
 ### First Step : Write your policy
+
+The convention is that policies has to be written in api/policies.
 
 #### 1 - Using Hapi
 
@@ -81,11 +82,38 @@ With Yeoman you can avoid the Second Step and the generation of the First Step C
 ```JavaScript
 /**
  * FILE: config/policies.js
+ * The following Policies are example of what you can do with Trails Policies
  */
 
  module.exports = {
+
+   // Apply on every controllers
+   *: ['ExamplePolicy.test'],
+
    ExampleController: {
-     test: [ 'ExamplePolicy.test' ]
-   }
+     // Unique policy for one controller function
+     test: [ 'ExamplePolicy.test' ],
+     // Before accessing multiple function in ExampleController, processing multiple policies example:
+     multiple: ['ExamplePolicy.test', 'ExamplePolicy.testfoo', 'ExamplePolicy.testbar'],
+   },
+   /**
+    * Controller Policies that applies on each function under a specific controller
+    */
+
+   DefaultController: ['AccessPolicy.logger'],
+   /**
+    * Boolean & wilcard policies
+    * true -> Unrestricted access
+    * False -> Restrict Every Time
+    */
+
+    CatsController: {
+      // Always access to controller function
+      miaou: true,
+      // Restrict access to controller function
+      purr: false,
+      // Apply every policies processing before accessing function
+      test: *
+    }
  }
 ```

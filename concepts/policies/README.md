@@ -88,7 +88,7 @@ The convention is that policies has to be written in api/policies.
  module.exports = {
 
    // Apply on every controllers
-   *: ['ExamplePolicy.test'],
+   '*': ['ExamplePolicy.test'],
 
    ExampleController: {
      // Unique policy for one controller function
@@ -113,7 +113,7 @@ The convention is that policies has to be written in api/policies.
       // Restrict access to controller function
       purr: false,
       // Apply every policies processing before accessing function
-      test: *
+      test: '*'
     }
  }
 ```

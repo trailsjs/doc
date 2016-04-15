@@ -62,6 +62,33 @@ The convention is that policies has to be written in api/policies.
   }
 ```
 
+#### 2 - Using Express
+
+```JavaScript
+'use strict'
+ const Policy = require('trails-policy')
+
+ /**
+  * @module ExamplePolicy
+  * @description This is the example policy
+  */
+ module.exports = class ExamplePolicy extends Policy {
+   test(req, res, next) {
+     const secret = req.body.secret
+     // Your own logic
+     /**
+     * The following code is an example:
+     * It stop when the secret parametter is passed and continue to the Controller when there is no secret parametter.
+     */
+     if (secret != '') {
+       // Stop and return with a custom message
+       return res.send('Your secret is' + secret)
+     }
+     // Continue to Example Controller
+     next()
+   }
+ }
+```
 ### Second Step : Load your policy
 
 ```JavaScript

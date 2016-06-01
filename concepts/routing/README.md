@@ -24,6 +24,9 @@ module.exports = [
   }
 ]
 ```
+
+###### Required values
+
 > method: can be ['POST', 'GET', 'PUT', 'DELETE']
 These are defined in RFC 2616 (https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
 
@@ -31,15 +34,22 @@ These are defined in RFC 2616 (https://www.w3.org/Protocols/rfc2616/rfc2616-sec9
 
 > handler: The controller that handle the request, in most of case: ControllerClass.ControllerFunction
 
-##### Execute Something before accessing Controller
+###### Optionals values
+> vhost: 
+Handle the request if the request vhost parameters match.
+
 ```JavaScript
-{
-  method: [ 'GET' ],
-  path: '/example/test',
-  handler: 'ExampleController.test',
-  config: {
-    pre: [ 'ExamplePreClass.test' ]
+// config/routes.js
+module.exports = [
+  {
+    method: [ 'GET' ],
+    path: '/example/test',
+    handler: 'ExampleController.test', 
+    vhost: 'www.example.com'
   }
-}
+]
 ```
-> pre: Execute the function before the controller
+
+This part of documentaion is currently under construction.
+
+For more information - Please check the [options available for routing here](https://github.com/trailsjs/trailpack-router/blob/master/lib/schemas/route.js)

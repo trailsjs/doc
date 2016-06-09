@@ -1,4 +1,6 @@
+<img width="200px" style="float: right;" src="../../assets/img/concepts/routing.png">
 # Routes
+
 ## Introduction
 A route is the functionality that implement the possibility to distinguish on URL from an another.
 Like all web frameworks, Trails route provide the mechanism that map route to controllers.
@@ -65,7 +67,7 @@ The URL that match the case.
 The controller that handle the request, in most of case: ControllerClass.ControllerFunction
 
 ##### Optionals values
-> vhost: 
+> vhost:
 Handle the request if the request vhost parameters match.
 
 ```JavaScript
@@ -74,7 +76,7 @@ module.exports = [
   {
     method: [ 'GET' ],
     path: '/example/test',
-    handler: 'ExampleController.test', 
+    handler: 'ExampleController.test',
     vhost: 'www.example.com'
   }
 ]

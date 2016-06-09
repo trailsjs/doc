@@ -6,7 +6,7 @@
 
 ### Introduction
 A Policy is <strong>function</strong>, that executed before accessing <strong>Controllers</strong>.
-With Policies you can setup <strong>access controll</strong>, <strong>autorization</strong> or any <strong>processing</strong> that can be done before accessing controller function.
+With Policies you can setup <strong>access control</strong>, <strong>authorization</strong> or any <strong>processing</strong> that can be done before accessing controller function.
 
 You can use Policies for whatever you want, there is no convention.
 

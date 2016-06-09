@@ -1,8 +1,8 @@
-<img width="200px" style="float: right;" src="../../assets/img/concepts/routing.png">
+<img width="250px" align="right" src="../../assets/img/concepts/routing.png">
 # Routes
 
 ## Introduction
-A route is the functionality that implement the possibility to distinguish on URL from an another.
+A route is the functionality that implement the possibility to distinguish on URL from an another.<br>
 Like all web frameworks, Trails route provide the mechanism that map route to controllers.
 
 ## Configuration

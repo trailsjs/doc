@@ -1,18 +1,11 @@
 # Routes
-
-
-
-## What is a Route
-
-### Introduction
+## Introduction
 A route is the functionality that implement the possibility to distinguish on URL from an another.
 Like all web frameworks, Trails route provide the mechanism that map route to controllers.
 
-## How to use it in Trails
+## Configuration
 
-#### 1 - Configuration
-
-##### The common way
+### The common way
 
 ```JavaScript
 // config/routes.js
@@ -25,16 +18,53 @@ module.exports = [
 ]
 ```
 
-###### Required values
+#### Required values
 
-> method: can be ['POST', 'GET', 'PUT', 'DELETE']
+##### methods
+
+> Express Methods
+
+- checkout
+- copy
+- delete
+- get
+- head
+- lock
+- merge
+- mkactivity
+- mkcol
+- move
+- m-search
+- notify
+- options
+- patch
+- post
+- purge
+- put
+- report
+- search
+- subscribe
+- trace
+- unlock
+- unsubscribe
+
+###### Hapi Methods
+
+You can provide whatever you want in method: can be ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS', 'PATCH', 'HEAD' ]
 These are defined in RFC 2616 (https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
 
-> path: The URL that match the case.
+###### Koa Methods
 
-> handler: The controller that handle the request, in most of case: ControllerClass.ControllerFunction
+You can provide whatever you want in method: can be ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS', 'PATCH', 'HEAD' ]
+These are defined in RFC 2616 (https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
 
-###### Optionals values
+##### path
+The URL that match the case.
+
+##### handler
+The controller that handle the request, in most of case: ControllerClass.ControllerFunction
+
+##### Optionals values
 > vhost: 
 Handle the request if the request vhost parameters match.
 

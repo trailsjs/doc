@@ -1,4 +1,4 @@
-<img width="250px" align="right" src="../../assets/img/trailpack/plugin.png">
+<img width="150px" align="right" src="../../assets/img/trailpack/plugin.png">
 # Official TrailPack Documentation
 This Documentation contains the list of current official TrailPack list from Trails
 ## Components
@@ -10,9 +10,9 @@ This Documentation contains the list of current official TrailPack list from Tra
 | core    | 1.0.0 |  Bootstrap  | Trails | [trailpack-core](https://github.com/trailsjs/trailpack-core) | [link](https://github.com/trailsjs/trailpack-core) |
 | bootstrap     | 1.0.8 |  Bootstrap  | Trails | [trailpack-bootstrap](https://github.com/trailsjs/trailpack-bootstrap) | [link](https://github.com/trailsjs/trailpack-bootstrap) |
 | router     | 1.0.2 | Routing  | Trails | [trailpack-router](https://github.com/trailsjs/trailpack-router) | [link](https://github.com/trailsjs/trailpack-router) |
-| footprint    | 1.0.1 |   | Footprint | [trailpack-footprint](https://github.com/trailsjs/trailpack-footprints) | [link](https://github.com/trailsjs/trailpack-footprints) |
-| datastore   | 1.0.1 |   | ORM & Query Providers Parent | [trailpack-datastore](https://github.com/trailsjs/trailpack-datastore) | [link](https://github.com/trailsjs/trailpack-datastore) |
-| webserver  | 1.0.1 |   | Webservers Parent | [trailpack-webserver](https://github.com/trailsjs/trailpack-webserver) | [link](https://github.com/trailsjs/trailpack-webserver) |
+| footprint    | 1.0.1 | Footprint | Trails | [trailpack-footprint](https://github.com/trailsjs/trailpack-footprints) | [link](https://github.com/trailsjs/trailpack-footprints) |
+| datastore   | 1.0.1 | ORM & Query Providers Parent | Trails | [trailpack-datastore](https://github.com/trailsjs/trailpack-datastore) | [link](https://github.com/trailsjs/trailpack-datastore) |
+| webserver  | 1.0.1 | Webservers Parent | Trails | [trailpack-webserver](https://github.com/trailsjs/trailpack-webserver) | [link](https://github.com/trailsjs/trailpack-webserver) |
 
 ### WebServers
 

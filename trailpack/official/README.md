@@ -49,4 +49,4 @@ This Documentation contains the list of current official TrailPack list from Tra
 
 | TrailPack | Version       | Category | Maintainer | Repo | Documentation |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
-| sails ( Unavailable ) | Unavailable |  Sails encapsulation  | Trails | [trailpack-webpack](https://github.com/trailsjs/trailpack-sails) | [link](https://github.com/trailsjs/trailpack-sails) |
+| sails ( Unavailable ) | Unavailable |  Sails encapsulation  | Trails | [trailpack-sails](https://github.com/trailsjs/trailpack-sails) | [link](https://github.com/trailsjs/trailpack-sails) |

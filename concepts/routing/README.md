@@ -26,29 +26,32 @@ module.exports = [
 
 > Express Methods
 
-- checkout
-- copy
-- delete
 - get
+- post
+- put
 - head
+- delete
+- options
+- trace
+- copy
 - lock
-- merge
-- mkactivity
 - mkcol
 - move
+- purge
+- propfind
+- proppatch
+- unlock
+- report
+- mkactivity
+- checkout
+- merge
 - m-search
 - notify
-- options
-- patch
-- post
-- purge
-- put
-- report
-- search
 - subscribe
-- trace
-- unlock
 - unsubscribe
+- patch
+- search
+- connect
 
 ###### Hapi Methods
 

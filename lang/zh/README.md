@@ -1,5 +1,5 @@
 [![Trails.js][trails-image]][trails-url]
-Trails Documentation
+Trails 文档
 =====================
 [![Gitter][gitter-image]][gitter-url]
 [![npm](https://img.shields.io/npm/l/trails.svg?style=flat-square)](https://www.npmjs.com/package/trails)
@@ -11,46 +11,45 @@ Trails Documentation
 
 
 
-The official documentation for the current stable release of Trails is on the master branch.
+Trails主分支上当前发布的稳定版本的官方文档。
 
-## Available Languages
-The documentation for Trails is translated to an number of different languages.
-The following list link to those different translations of the Trails documentation:
+## 翻译语言
+Trails文档被翻译成多种不同语言.    
+Trails文档的其他翻译版本如下列表：
 
 | Language                     | [IETF Language Tag](https://en.wikipedia.org/wiki/IETF_language_tag)  | Maintainer        | Repo                               |
 | ---------------------------- | ------- | ------------------ | ---------------------------------- |
+| English                     | `en`    | [@jaumard](https://github.com/jaumard)  [@maissani](https://github.com/maissani)    | [trails-docs-en](../../README.md)
 | French                     | `fr`    | [@jaumard](https://github.com/jaumard)  [@maissani](https://github.com/maissani)    | [trails-docs-fr](lang/fr/README.md)
 
 
-## Table of Contents
+## 文档目录
 
-* [Introduction](introduction/introduction.md)
-  * [Installation](introduction/installation.md)
-  * [Getting Started](introduction/getting-started.md)
-* Framework
-  * [Anatomy](/anatomy/README.md)
-  * [Concepts](/concepts/README.md)
-  * Core Components
-  * Examples
-  * [User Guides](/guides/README.md)
-* Trailpack Docs
-  * [Official Trailpack](/trailpack/official/README.md)
-  * Community Trailpack
+* [介绍](introduction/introduction.md)
+  * [安装](introduction/installation.md)
+  * [开始](introduction/getting-started.md)
+* 框架
+  * [目录结构](/anatomy/README.md)
+  * [概念](/concepts/README.md)
+  * 核心组件
+  * 示例
+  * [用户指南](/guides/README.md)
+* Trailpack文档
+  * [官方 Trailpack](/trailpack/official/README.md)
+  * 社区 Trailpack
 
 
-Roadmap
+发展路线
 ------------
-* [Current Roadmap](https://github.com/trailsjs/trails/blob/master/ROADMAP.md)
+* [当前路线](https://github.com/trailsjs/trails/blob/master/ROADMAP.md)
 
 
-Contributing
+贡献
 ------------
 
-We love contributors! For more information on how you can contribute to the
-Trails documentation, please read
-[Contributing Guide](contributing/README.md)
+我们热爱贡献者！想了解更多关于如何参与贡献Trails文档的信息请阅读[Contributing Guide](contributing/README.md)
 
-License
+许可协议
 ------------
 [MIT](LICENSE)
 <img src="http://i.imgur.com/dCjNisP.png">

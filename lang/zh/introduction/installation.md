@@ -7,7 +7,7 @@
 Trails 需要 Node 4+ (如: ES6 依赖)
 
 ## NodeJS 安装
-Trails能完美地运行在当前NodeJS的LTS版本和稳定分支上。
+Trails能完美地运行在NodeJS当前的LTS版本和稳定分支上。
 请通过如下链接查看安装文档:    
 二进制和安装程序: 
 https://nodejs.org/en/download/

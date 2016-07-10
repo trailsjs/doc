@@ -20,7 +20,7 @@ The following list link to those different translations of the Trails documentat
 | Language                     | [IETF Language Tag](https://en.wikipedia.org/wiki/IETF_language_tag)  | Maintainer        | Repo                               |
 | ---------------------------- | ------- | ------------------ | ---------------------------------- |
 | French                     | `fr`    | [@jaumard](https://github.com/jaumard)  [@maissani](https://github.com/maissani)    | [trails-docs-fr](lang/fr/README.md)
-
+| 中文                     | `zh`    | [@cuitianze](https://github.com/cuitianze) | [trails-docs-zh](lang/zh/README.md)
 
 ## Table of Contents
 

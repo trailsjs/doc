@@ -1,9 +1,6 @@
-# Introduction
+# 介绍
 
-The introduction Guide page covers project description.
+介绍指南包含项目描述.
 
-## What is Trails ?
-Trails is a modern, community-driven web application framework for node.js. It
-builds on the pedigree of [Rails](http://rubyonrails.org/) and [Grails](https://grails.org/)
-to accelerate development by adhering to a straightforward, convention-based,
-API-driven design philosophy.
+## Trails是什么?
+Trails是先进的，社区驱动的node.js网络应用框架。它继承了[Rails](http://rubyonrails.org/)和[Grails](https://grails.org/)的高贵血统，通过简单的，基于约定的，API驱动的设计哲学来加快开发。

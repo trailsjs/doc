@@ -1,29 +1,29 @@
-# Installation Guide
+# 安装指南
 
-The installation Guide page covers how to install Trails via console command.
+安装指南包含如何通过命令行安装Trails。
 
-## Requirement
+## 环境要求
 
-Trails require Node 4+ (ie: ES6 Dependency)
+Trails 需要 Node 4+ (如: ES6 依赖)
 
-## NodeJS Installation
-Current LTS NodeJS version or Stable Branch works perfectly with Trails please check install docs at the following links: 
-
-Binaries and installers: 
+## NodeJS 安装
+Trails能完美地运行在当前NodeJS的LTS版本和稳定分支上。
+请通过如下链接查看安装文档:    
+二进制和安装程序: 
 https://nodejs.org/en/download/
 
-Via Package Manager: 
+包管理器: 
 https://nodejs.org/en/download/package-manager/
 
-## Trails Installation
+## Trails 安装
 
-On Linux distributions
+Linux平台
 ```sh
 $ sudo npm install -g generator-trails
 $ yo trails
 ```
 
-On Windows (or Mac OS with Homebrew)
+Windows平台 (或 已安装Homebrew的Mac OS)
 ```sh
 $ npm install -g generator-trails
 $ yo trails

@@ -1,7 +1,7 @@
-# Concepts
-In this section, you will see, trails functionalities, mechanisms, and explainations to understand what's behind the hood.
+# 概念
+在这部分，你会见识到，trails的功能，机制，和其背后需要理解的解释说明。
 
-###### Trails Concepts
+###### Trails 概念
 
 
 > Configuration

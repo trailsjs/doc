@@ -29,7 +29,7 @@ Trails文档的其他翻译版本如下列表：
   * [安装](introduction/installation.md)
   * [开始](introduction/getting-started.md)
 * 框架
-  * [目录结构](/anatomy/README.md)
+  * [目录结构](anatomy/README.md)
   * [概念](/concepts/README.md)
   * 核心组件
   * 示例

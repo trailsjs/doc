@@ -1,11 +1,11 @@
-<img width="150px" align="right" src="../../assets/img/trailpack/plugin.png">
-# Official TrailPack Documentation
-This Documentation contains the list of current official TrailPack list from Trails
-## Components
+<img width="150px" align="right" src="../../../../assets/img/trailpack/plugin.png">
+# 官方 TrailPack 文档
+本文档包含当前官方TrailPack列表
+## 组件
 
-### Common & Core
+### 通用 & 核心
 
-| TrailPack | Version       | Category | Maintainer | Repo | Documentation |
+| TrailPack | 版本       | 分类 | 维护者 | 仓库 | 文档 |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
 | core    | 1.0.0 |  Bootstrap  | Trails | [trailpack-core](https://github.com/trailsjs/trailpack-core) | [link](https://github.com/trailsjs/trailpack-core) |
 | bootstrap     | 1.0.8 |  Bootstrap  | Trails | [trailpack-bootstrap](https://github.com/trailsjs/trailpack-bootstrap) | [link](https://github.com/trailsjs/trailpack-bootstrap) |
@@ -14,17 +14,17 @@ This Documentation contains the list of current official TrailPack list from Tra
 | datastore   | 1.0.1 | ORM & Query Providers Parent | Trails | [trailpack-datastore](https://github.com/trailsjs/trailpack-datastore) | [link](https://github.com/trailsjs/trailpack-datastore) |
 | webserver  | 1.0.1 | Webservers Parent | Trails | [trailpack-webserver](https://github.com/trailsjs/trailpack-webserver) | [link](https://github.com/trailsjs/trailpack-webserver) |
 
-### WebServers
+### Web服务器
 
-| TrailPack | Version       | Category | Maintainer | Repo | Documentation |
+| TrailPack | 版本       | 分类 | 维护者 | 仓库 | 文档 |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
 | express     | 1.0.3 |  Webserver  | Trails | [trailpack-express](https://github.com/trailsjs/trailpack-express) | [link](https://github.com/trailsjs/trailpack-express) |
 | hapi      | 1.0.2 |  Webserver  | Trails | [trailpack-hapi](https://github.com/trailsjs/trailpack-hapi) | [link](https://github.com/trailsjs/trailpack-hapi) |
 | koa ( Unavailable )     |  Unavailable |  Webserver  | Trails | [trailpack-koa](https://github.com/trailsjs/trailpack-koa) | [link](https://github.com/trailsjs/trailpack-koa) |
 
-### ORM & Database Query Providers
+### ORM & 数据库查询Providers
 
-| TrailPack | Version       | Category | Maintainer | Repo | Documentation |
+| TrailPack | 版本       | 分类 | 维护者 | 仓库 | 文档 |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
 | waterline     | 1.0.0-beta-1 |  ORM   | Trails | [trailpack-waterline](https://github.com/trailsjs/trailpack-waterline) | [link](https://github.com/trailsjs/trailpack-waterline) |
 | sequelize     | 1.0.0 |  ORM  | Trails | [trailpack-sequelize](https://github.com/trailsjs/trailpack-sequelize) | [link](https://github.com/trailsjs/trailpack-sequelize) |
@@ -32,21 +32,21 @@ This Documentation contains the list of current official TrailPack list from Tra
 | knex     | 0.5.11 |  SQL Query & Database Provider   | Trails | [trailpack-knex](https://github.com/trailsjs/trailpack-knex) | [link](https://github.com/trailsjs/trailpack-knex) |
 | graphql  ( Unavailable )    | Unavailable |  ORM   | Trails | [trailpack-graphql](https://github.com/trailsjs/trailpack-graphql) | [link](https://github.com/trailsjs/trailpack-graphql) |
 
-### Util
+### 工具类
 
-| TrailPack | Version       | Category | Maintainer | Repo | Documentation |
+| TrailPack | 版本       | 分类 | 维护者 | 仓库 | 文档 |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
 | repl     | 1.0.8 |  Interactive Shell  | Trails | [trailpack-repl](https://github.com/trailsjs/trailpack-repl) | [link](https://github.com/trailsjs/trailpack-repl) |
 | autoreload     | 1.0.2 |  LiveReload  | Trails | [trailpack-autoreload](https://github.com/trailsjs/trailpack-autoreload) | [link](https://github.com/trailsjs/trailpack-autoreload) |
 
-### Asset Pipeline
+### 资源自动化构建工具
 
-| TrailPack | Version       | Category | Maintainer | Repo | Documentation |
+| TrailPack | 版本       | 分类 | 维护者 | 仓库 | 文档 |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
 | webpack     | 0.0.5 |  Asset Pipeline  | Trails | [trailpack-webpack](https://github.com/trailsjs/trailpack-webpack) | [link](https://github.com/trailsjs/trailpack-webpack) |
 
-### Framework encapsulation
+### 框架封装
 
-| TrailPack | Version       | Category | Maintainer | Repo | Documentation |
+| TrailPack | 版本       | 分类 | 维护者 | 仓库 | 文档 |
 | --------- | -------       | -------- | ---------  | ---- | ------------- |
 | sails ( Unavailable ) | Unavailable |  Sails encapsulation  | Trails | [trailpack-sails](https://github.com/trailsjs/trailpack-sails) | [link](https://github.com/trailsjs/trailpack-sails) |

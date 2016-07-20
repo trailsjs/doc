@@ -1,16 +1,16 @@
 # Anatomy
 ###### Trails Anatomy
 
-## Tags
-``root directory```
+## 标签
+``根目录```
 
-## Where am I ?
+## 在哪儿 ?
 
-In the root project directory.
+根项目文件夹内.
 
-This is the place where you have launch the ```yo trails``` command
+运行```yo trails```命令的地方。
 
-### Path:
+### 路径:
 
 >  [api/](api/README.md)
 

@@ -1,14 +1,14 @@
 # Anatomy
 ###### Trails Anatomy
 
-## Tags
-``root directory```
+## 标签
+``根目录```
 
-## Where am I ?
+## 在哪里 ?
 
-The API directory, controllers, models, and all your custom logic and datastructure should be contained there. 
+包含API目录，controllers, models，和所有自定义的逻辑和数据结构。
 
-### Path:
+### 路径:
 
 > controllers/
 

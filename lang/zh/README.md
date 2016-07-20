@@ -33,7 +33,7 @@ Trails文档的其他翻译版本如下列表：
   * [概念](concepts/README.md)
   * 核心组件
   * 示例
-  * [用户指南](/guides/README.md)
+  * [用户指南](guides/README.md)
 * Trailpack文档
   * [官方 Trailpack](/trailpack/official/README.md)
   * 社区 Trailpack

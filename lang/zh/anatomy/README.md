@@ -1,9 +1,9 @@
 # Anatomy
 ###### Trails Anatomy
-This folder describe the anatomy of Trails
+剖析Trails的目录结构
 
-## Let's Strart The Anatomy Guide
+## 详见 Anatomy 指南
 
-### Path: 
+### 路径: 
 
 > [TrailsProject/](./trailsProject/README.md)

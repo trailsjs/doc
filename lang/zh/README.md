@@ -35,7 +35,7 @@ Trails文档的其他翻译版本如下列表：
   * 示例
   * [用户指南](guides/README.md)
 * Trailpack文档
-  * [官方 Trailpack](/trailpack/official/README.md)
+  * [官方 Trailpack](trailpack/official/README.md)
   * 社区 Trailpack
 
 

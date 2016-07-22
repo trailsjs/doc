@@ -5,25 +5,25 @@ This folder describe the anatomy of a Trails application.
 ## File Structure 
 *Click on links to see files or folders details*
 
-[:file_folder: api](./trailsProject/api) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: controllers <br> 
+[:file_folder: **api**](./trailsProject/api) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **controllers** <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultController.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ViewController.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: models <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **models** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExampleModel.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: policies <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **policies** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExamplePolicy.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: services <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **services** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultService.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
-:file_folder: config <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: locales <br>
+:file_folder: **config** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **locales** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en.json <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: env <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **env** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;development.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;production.js <br>
@@ -39,7 +39,7 @@ This folder describe the anatomy of a Trails application.
 &nbsp;&nbsp;&nbsp;&nbsp;policies.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;session.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;web.js <br>
-:file_folder: .node_modules <br>
+:file_folder: .**node_modules** <br>
 index.js <br>
 package.json <br>
 README.md <br>

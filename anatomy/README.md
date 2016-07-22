@@ -2,50 +2,49 @@
 ###### Trails Anatomy
 This folder describe the anatomy of a Trails application.
 
-```
-- api
-  - controllers 
-      DefaultController.js 
-      ViewController.js    
-      index.js
-  - models 
-      ExampleModel.js
-      index.js
-  - policies  
-      ExamplePolicy.js
-      index.js
-  - services
-      DefaultService.js 
-      index.js
-    index.js
-- config
-  - locales
-      en.json
-  - env
-      development.js 
-      index.js       
-      production.js  
-      staging.js     
-      testing.js
-  database.js 
-  i18n.js          
-  main.js     
-  routes.js   
-  views.js
-  index.js    
-  log.js      
-  policies.js 
-  session.js  
-  web.js
-- node_modules
-index.js
-package.json
-README.md
-LICENSE
+## File Structure 
+*Click on links to see files or folders details*
 
-server.js
-```
+[:file_folder: api](./trailsProject/api) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: controllers <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultController.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ViewController.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: models <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExampleModel.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: policies <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExamplePolicy.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: services <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultService.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+:file_folder: config <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: locales <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en.json <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: env <br>
+&nbsp;&nbsp;&nbsp;&nbsp;development.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;production.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;staging.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;testing.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;database.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;i18n.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;main.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;routes.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;views.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;log.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;policies.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;session.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;web.js <br>
+:file_folder: .node_modules <br>
+index.js <br>
+package.json <br>
+README.md <br>
+LICENSE <br>
+server.js <br>
 
-### Path: 
-
-> [TrailsProject/](./trailsProject/README.md)
+## Also see: 
+- [The Trailpack Anatomy Documentation]()

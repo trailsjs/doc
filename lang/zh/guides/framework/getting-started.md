@@ -1,29 +1,30 @@
-# Getting Started
-###### Trails - UserGuides
+# 入门指南
+###### Trails - 用户指导
 
-You will learn some basic information about Trails, how to create a Trails project, and the basic structure of a Trails project.
+你将学习到Trails相关的基础知识，怎样创建一个Trails项目，和Trails项目的基础结构。
 
-This guide assumes that you have previously installed Node.js 4.0.0 (or higher) on your machine. Some knowledge of MVC and Javascript is needed.
+本文假定你的机器上已经安装了Node.js 4.0.0(或更高版本)。掌握一些MVC和JavaScript的知识是前提。
 
-## What is Trails ?
+## Trails是什么 ?
 
-Trails is a new Node.js MVC framework write in ES2015 (ES6). It's a modular framework which allows you to choose your every day framework(s) and make them work together.
+Trails是一个新的用ES2015 (ES6)写的 Node.js MVC 框架. 
+这是一个模块化的框架，允许你选择日常使用的框架，并使他们能很好地在一起工作。
 
-## Installation
+## 安装
 
-Trails use `yeoman` to generate a basic project. So if you haven't installed it yet, do it now :
+Trails 使用 `yeoman` 来生成基础项目. 如果你现在还没有安装它, 现在运行 :
 
 `npm install -g yo`
 
-Now install the `yeoman` generator for Trails :
+接着安装 `yeoman`  Trails 的生成器 :
 
 `npm install -g generator-trails`
 
-You are now ready to create your first application ! :)
+你现在已经准备好创建第一个项目了 ! :)
 
-## Create a project
+## 创建项目
 
-Creating a project is very easy. Just follow this guide :
+创建项目十分容易. 只要跟随本文的步骤 :
 
 ```
 mkdir myproject;
@@ -31,49 +32,48 @@ cd myproject;
 yo trails;
 ```
 
-You should see something like this :
+你将看到如下的一些信息 :
 
 ![.Web server choice](/assets/img/tutoYoTrails1.png)
 
-The first step is to choose the web server. By default it's hapi but you can choose another one if prefer. This choice will affect how you write your `policies` and `controllers`, but we will se this later.
+第一步是选择web服务器框架. 默认是 hapi，你可以选择你更喜欢的另一个框架. 这个选项将决定你如何书写 `policies` 和 `controllers`, 这个我们一会儿再说.
 
-The other steps are for `package.json` information. In order :
+接下来的步骤是 `package.json` 信息. 依次是 :
 
-* Name of your project, by default the name of the folder, here we set the default to `myproject`
-* Description of your project
-* Project homepage url, url of your project repository
-* Author's Name, you :)
-* Author's Email
-* Author's Homepage
-* Package keywords
-* GitHub username or organization
-* Your website
-* License
+* 项目名称, 默认是所在文件夹的名字, 这里我们设置默认为 `myproject`
+* 项目描述
+* 项目主页链接地址, 你的项目仓库的url
+* 作者名字, 你 :)
+* 作者邮箱
+* 作者主页
+* 包的关键字
+* GitHub用户名或组织名称
+* 你的网站
+* 许可证
 
-After this the generator will create your project structure and install dependancies (`npm install`).
+在这之后，生成器会创建你的项目结构，并安装依赖 (`npm install`).
 
 ![.Project generated](/assets/img/tutoYoTrails2.png)
 
-## Run a project
+## 运行项目
 
-Like the yeoman generator instructs, you only need to do :
+就像yeoman生成器的引导一样，你只需要运行:
 
 `node server.js`
 
-Your server should now be running on port 3000, and you should see on your console :
+你的服务器现在应该运行在3000端口，在你的console终端里你会看到:
 
 ![.Start log](/assets/img/tutoYoTrails3.png)
 
-And if your open http://localhost:3000 you should see :
+如果你打开 http://localhost:3000 你会看到:
 
 ![.Hello Trails.js !](/assets/img/tutoYoTrails4.png)
 
-To stop server you need to `Ctrl+c` twice.
+停止服务器， 连按`Ctrl+c`两次.
 
-## How to use Yeoman Generators
+## 如何使用Yeoman生成器
 
-Trails uses [Yeoman](http://yeoman.io/) to generate scaffolding for new
-applications, and to create resources inside the application.
+Trails使用[Yeoman](http://yeoman.io/)来生成新项目的脚手架, 并创建应用内的资源.
 
 ```sh
 $ yo trails --help

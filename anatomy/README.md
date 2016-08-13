@@ -29,21 +29,20 @@ This folder describe the anatomy of a Trails application.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;production.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;staging.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testing.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;database.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;i18n.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;main.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;routes.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;views.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[database.js](config/database.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[i18n.js](config/i18n.md) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;[index.js](index.md) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;log.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;policies.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;session.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;web.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[log.js](config/log.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[main.js](config/main.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[policies.js](config/policies.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[routes.js](config/routes.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[session.js](config/session.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[views.js](config/views.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[web.js](config/web.md) <br>
 [index.js](index.md) <br>
-package.json <br>
-README.md <br>
-LICENSE <br>
-server.js <br>
+[package.json](trailsProject/package.md) <br>
+[LICENSE](trailsProject/LICENSE.md) <br>
+[server.js](trailsProject/server.md) <br>
 
 ## Also see: 
 - [The Trailpack Anatomy Documentation]()

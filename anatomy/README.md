@@ -20,15 +20,15 @@ This folder describe the anatomy of a Trails application.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultService.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[index.js](index.md) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;[index.js](index.md) <br>
-:file_folder: [**config**](./trailsProject/config) <br>
+:file_folder: [**config**](trailsProject/config) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **locales** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en.json <br>
-&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **env** <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;development.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;:file_folder: [**env**](trailsProject/config/env/README.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[development.js](trailsProject/config/env/env.md) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[index.js](index.md) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;production.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;staging.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testing.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[production.js](trailsProject/config/env/env.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[staging.js](trailsProject/config/env/env.md) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[testing.js](trailsProject/config/env/env.md) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;[database.js](config/database.md) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;[i18n.js](config/i18n.md) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;[index.js](index.md) <br>

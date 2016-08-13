@@ -10,4 +10,8 @@ The controllers directory, contain all your controllers with middleware logic fo
 
 ### Path:
 
+> [DefaultController.js](DefaultController.md)
+
+> [ViewController.js](ViewController.md)
+
 > [index.js](../../../index.md)

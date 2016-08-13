@@ -24,11 +24,11 @@ This folder describe the anatomy of a Trails application.
 &nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **locales** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en.json <br>
 &nbsp;&nbsp;&nbsp;&nbsp;:file_folder: **env** <br>
-&nbsp;&nbsp;&nbsp;&nbsp;development.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;production.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;staging.js <br>
-&nbsp;&nbsp;&nbsp;&nbsp;testing.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;development.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;production.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;staging.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testing.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;database.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;i18n.js <br>
 &nbsp;&nbsp;&nbsp;&nbsp;main.js <br>

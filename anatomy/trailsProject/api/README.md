@@ -18,4 +18,4 @@ The API directory, controllers, models, and all your custom logic and datastruct
 
 > [services/](services/README.md)
 
-> index.js
+> [index.js](../../index.md)

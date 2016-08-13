@@ -12,17 +12,13 @@ This is the place where you have launch the ```yo trails``` command
 
 ### Path:
 
->  [api/](api/README.md)
+> [api/](api/README.md)
 
-> config/
-
-> node_modules/
+> [config/](config/README.md)
 
 > .editorconfig
 
 > .gitignore
-
-> .trailsrc
 
 > index.js
 

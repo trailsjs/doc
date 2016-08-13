@@ -10,4 +10,4 @@ The policies directory, contain all your policies with middleware logic for your
 
 ### Path:
 
-> index.js
+> [index.js](../../../index.md)

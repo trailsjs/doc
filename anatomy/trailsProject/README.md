@@ -20,7 +20,7 @@ This is the place where you have launch the ```yo trails``` command
 
 > .gitignore
 
-> index.js
+> [index.js](../index.md)
 
 > LICENCE
 

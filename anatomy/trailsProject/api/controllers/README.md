@@ -10,4 +10,4 @@ The controllers directory, contain all your controllers with middleware logic fo
 
 ### Path:
 
-> index.js
+> [index.js](../../../index.md)

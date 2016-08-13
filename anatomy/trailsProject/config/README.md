@@ -10,4 +10,4 @@ In the config directory of your project. You will configure your project, enviro
 
 ### Path:
 
-> index.js
+> [index.js](../../index.md)

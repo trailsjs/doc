@@ -10,4 +10,4 @@ The services directory, contain all your services with custom logic for your app
 
 ### Path:
 
-> index.js
+> [index.js](../../../index.md)

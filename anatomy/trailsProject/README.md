@@ -2,7 +2,7 @@
 ###### Trails Anatomy
 
 ## Tags
-``root directory```
+```root directory```
 
 ## Where am I ?
 
@@ -12,24 +12,14 @@ This is the place where you have launch the ```yo trails``` command
 
 ### Path:
 
->  [api/](api/README.md)
+> [api/](api/README.md)
 
-> config/
+> [config/](config/README.md)
 
-> node_modules/
+> [index.js](../index.md)
 
-> .editorconfig
+> [LICENCE](LICENSE.md)
 
-> .gitignore
+> [package.json](package.md)
 
-> .trailsrc
-
-> index.js
-
-> LICENCE
-
-> package.json
-
-> README.md
-
-> server.js
+> [server.js](server.md)

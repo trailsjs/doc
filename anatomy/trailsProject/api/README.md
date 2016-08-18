@@ -10,12 +10,12 @@ The API directory, controllers, models, and all your custom logic and datastruct
 
 ### Path:
 
-> controllers/
+> [controllers/](controllers/README.md)
 
-> models/
+> [models/](models/README.md)
 
-> policies/
+> [policies/](policies/README.md)
 
-> services/
+> [services/](services/README.md)
 
-> index.js
+> [index.js](../../index.md)

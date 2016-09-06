@@ -249,7 +249,7 @@ Start your server with `npm start` and you should see if your trailpack is execu
 
 ![Trailpack logs](/assets/img/tutoYoTrailpack3.png)
 
-Now you are ready to create some new cool Trailpacks ! But don't waste your time fooly and check first, on npm, if the Trailpack you want does not already exist ;)
+Now you are ready to create some new cool Trailpacks! Make sure to check NPM before you begin writing, there may already be a trailpack that does exactly what you want ;)
 
 See you guys later !
 

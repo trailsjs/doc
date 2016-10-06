@@ -55,7 +55,7 @@ License
 [MIT](LICENSE)
 <img src="http://i.imgur.com/dCjNisP.png">
 
-[trails-image]: http://i.imgur.com/zfT2NEv.png
+[trails-image]: http://i.imgur.com/0iVVRxi.png
 [trails-url]: http://trailsjs.io
 [gitter-image]: http://img.shields.io/badge/+%20GITTER-JOIN%20CHAT%20%E2%86%92-1DCE73.svg?style=flat-square
 [gitter-url]: https://gitter.im/trailsjs/trails

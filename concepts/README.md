@@ -24,7 +24,7 @@ In this section, you will see, trails functionalities, mechanisms, and explainat
 
 > [Policies] (policies/README.md)
 
-> Routing
+> [Routing] (routing/README.md)
 
 > Services
 

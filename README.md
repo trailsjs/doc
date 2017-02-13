@@ -38,7 +38,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Trailpack](/en/upgrade/trailpack.md)
 8. [Reference](/en/ref/README.md)
   - [Trails API](/en/ref/trails.md)
-  - [Trailpack API](/en/ref/trails.md)
+  - [Trailpack API](/en/ref/trailpack.md)
   - [Design Theory](/en/ref/theory.md)
 9. [Support](http://trailsjs.io/support)
 

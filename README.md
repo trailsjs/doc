@@ -40,6 +40,7 @@
 - [Reference](/en/ref)
   - [Trails API](/en/ref/trails)
   - [Trailpack API](/en/ref/trails)
+  - [Design Theory](/en/ref/theory)
 
 # Available Languages
 The documentation for Trails is translated to an number of different languages.

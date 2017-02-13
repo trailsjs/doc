@@ -53,7 +53,7 @@ module.exports = {
 
 ## Access
 
-The application configuration is available at `this.config` inside all Controllers, Services, and Policies.
+The application configuration is available at `this.config` inside all Controllers, Services, and Policies. The nested objects in the configuration files are flattened into a [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
 ```js
 // api/services/MapService.js

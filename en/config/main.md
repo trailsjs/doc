@@ -23,14 +23,14 @@ module.exports = {
 
 The list of Trailpacks to load into the framework. Trailpacks to include can be found on the [Plugins](http://trailsjs.io/plugins) page. Note: if `main.packs` is empty, the program will start and immediately exit!
 
-As discussed in the [Trails Design Theory](../ref/theory) section:
+As discussed in the [Trails Design Theory](../ref/theory.md) section:
 
 > The Trails framework has exactly one feature: the ability to harmoniously manage Trailpacks.
 > The capability available to the developer is thus an emergent property of the Trailpacks the user has installed. 
 
 Read more about Trailpacks:
-- [Concepts: Trailpack](../concepts/trailpack)
-- [Reference: Trailpack API](../ref/trailpack)
+- [Concepts: Trailpack](../build/trailpack.md)
+- [Reference: Trailpack API](../ref/trailpack.md)
 
 ## `main.paths`
 

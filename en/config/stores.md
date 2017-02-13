@@ -1,6 +1,6 @@
 # `stores.js`
 
-Define data stores. Each [Model](../concepts/Model) maps itself to a "store". A single Trails application can configure many data stores of similar or different types.
+Define data stores. Each [Model](../build/model.md) maps itself to a "store". A single Trails application can configure many data stores of similar or different types.
 
 ```js
 // config/stores.js

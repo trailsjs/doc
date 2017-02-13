@@ -18,7 +18,7 @@ module.exports = [
 
 ## `handler`
 
-A string that defines the [Trails Controller](../concepts/controller.md) method that will handle the request.
+A string that defines the [Trails Controller](../build/controller.md) method that will handle the request.
 
 ## `method`
 
@@ -84,7 +84,7 @@ Some doc generation tools, such as Swagger, can use the `config` object to glean
 
 ### Access Control
 
-Pre-requisites can be defined for a route, which are a list of [Trails Policies](../concepts/policy.md) that must pass before the route handler is invoked.
+Pre-requisites can be defined for a route, which are a list of [Trails Policies](../build/policy.md) that must pass before the route handler is invoked.
 
 ```js
 {

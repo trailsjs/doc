@@ -23,7 +23,6 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
 5. [Deploy](/en/deploy/README.md)
   - [Requirements](/en/deploy/requirements.md)
   - [Providers](/en/deploy/providers.md)
-  - [Sessions](/en/deploy/sessions.md)
   - [Security](/en/deploy/security.md)
   - [Scaling](/en/deploy/scaling.md)
 6. [Extend](/en/extend/README.md)

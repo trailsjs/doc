@@ -14,6 +14,10 @@ Initialize the application with the provided `app` definition. All configured Tr
 | `app.pkg` | `Object` | the `package.json` of the module | yes. throws `PackageNotDefinedError` |
 | `app.api` | `Object` | the application's API definition | yes. throws `ApiNotDefinedError` |
 
+| @emits | description |
+|:---|:---|
+| `trailpack:<pack>:constructed` | after each Trailpack is successfully instantiated |
+
 In a [New Trails Application](../start.md), Trails is instantiated in `server.js` like so:
 
 ```js
@@ -39,6 +43,12 @@ Binds event listeners and initiates the Trailpack Boot Process.
 |:---|:---|
 | `trails:start` | emitted before the start of the Trailpack boot process |
 | `trails:ready` | emitted once all Trailpacks have successfully initialized |
+| `trailpack:<pack>:validated` | emitted after each Trailpack completes the `validate` stage |
+| `trailpack:<pack>:configured` | emitted after each Trailpack completes the `configure` stage |
+| `trailpack:<pack>:initialized` | emitted after each Trailpack completes the `initialized` stage |
+| `trailpack:all:validated` | emitted after all Trailpacks have completed the `validated` stage |
+| `trailpack:all:configured` | emitted after all Trailpacks have completed the `configure` stage |
+| `trailpack:all:initialized` | emitted after all Trailpacks have completed the `initialize` stage |
 
 | @return type | description |
 |:---|:---|
@@ -55,6 +65,8 @@ Unbind all event listeners and unload all Trailpacks.
 | @emits | description |
 |:---|:---|
 | `trails:stop` | emitted before the Trailpacks unload |
+| `trailpack:<pack>:unloaded` | emitted after each Trailpack completes the `unload` stage |
+| `trailpack:all:unloaded` | emitted after all Trailpacks have completed the `unload` stage |
 
 | @return type | description |
 |:---|:---|

@@ -22,7 +22,7 @@ Define how web requests are routed to controllers.
 
 ## [`stores.js`](stores.md)
 
-Define data stores. Each [Model](../concepts/Model) maps itself to a "store".
+Define data stores. Each [Model](../build/model.md) maps itself to a "store".
 
 ## [`i18n.js`](i18n.md)
 

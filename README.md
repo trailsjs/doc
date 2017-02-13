@@ -25,6 +25,7 @@
   - [REPL](/en/tools/repl.md)
   - [Auto Reload](/en/tools/autoreload.md)
 - [Guides](/en/guide/README.md)
+  - [Build a Trailpack](/en/guide/trailpack.md)
   - [Server-Side Rendering](/en/guide/render/README.md)
     - [React.js](/en/guide/render/react.md)
     - [Angular 2](/en/guide/render/ng2.md)

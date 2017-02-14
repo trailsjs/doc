@@ -99,4 +99,4 @@ A bunch of new files will be created, and you'll be able to fire up your new Tra
 └───────────────────────────────────────────┘
 ```
 
-## Next: Build your App
+## Next: [Build your App](./build/README.md)

@@ -51,3 +51,19 @@ Large, monolithic frameworks such as Sails are a nightmare for maintainers. Dedi
 #### Community
 
 The project and ecosystem shouldn't be over-reliant on any single person or entity. Most projects could improve in this area, including Trails, but continued decentralization and democratization of effort and knowledge is a constant goal.
+
+## Why should I use Trails?
+
+- if you're new to Node.js development and want to follow Best Practice
+- when you want to build a GraphQL or REST web service
+- when you want to render your React / Angular 2 application on the server.
+- when you might typically use Hapi to set up a microservices backend, but want a more consistent and organized way of configuring the application.
+- are already familiar with Sails, and want to be able to use more modern patterns and techniques
+- it will make developing Node.js applications more fun.
+- you can deploy it anywhere you normally deploy Node.js applications
+- you can get rid of it!
+
+There are plenty of frameworks available already to help you do easy and unimportant things very quickly. Trails helps you build software systems that can scale both in their ability to handle large workloads as well as large development efforts, teams, and project scope. In the infamous cases of [Meteor](https://www.meteor.com/) and [Sails](https://github.com/balderdashy/sails), their disproportionate focus on reducing the development time needed to set up a new app and *see something happen* did not consider the true long-term costs of these design decisions. While Trails happens to be just as easy to set up as other frameworks, we avoid the pitfall of over-optimizing productivity in the early stages of a project. We, and all developers, keenly understand that the vast majority of software costs occur in debugging and maintenance.
+
+We believe that the number of features in a framework is not itself a feature. Our design decisions will always prefer to avoid bloat and complexity, increase usability and developer-friendliness, and respond to user feedback. As a result, applications built with Trails will run faster, require less maintenance effort, and be more fun to build.
+

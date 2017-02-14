@@ -1,12 +1,13 @@
 # Table of Contents
 
-If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [*Start*](/en/start.md)!
+If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [**Start**](/en/start.md)!
 
 1. [Start](en/start.md)
 2. [Build](/en/api/README.md)
   - [Controller](/en/api/controller.md)
   - [Service](/en/api/service.md)
   - [Model](/en/api/model.md)
+  - [Resolver](/en/api/resolver.md)
   - [Policy](/en/api/policy.md)
   - [Trailpack](/en/api/trailpack.md)
 3. [Configure](en/config/README.md)

@@ -63,13 +63,13 @@ Trails can automatically generate RESTful endpoints based on the Models you defi
 Specify the name, description, and other attributes of your new module. These values will be set in the module's `package.json`.
 
 ```
-? Module Name (my-trails-app)
-? Description
-? Project homepage url
-? Author's Name langateam
-? Author's Email hello@langa.io
-? Author's Homepage langa.io
-? Package keywords (comma to split)
+? Module Name (new-trails-app)
+? Description this is a new trails app
+? Project homepage url trailsjs.io
+? Author's Name trailsjs
+? Author's Email hello@trailsjs.io
+? Author's Homepage trailsjs.io
+? Package keywords (comma to split) trails, quickstart, documentation
 ```
 
 #### 5. License
@@ -78,8 +78,8 @@ Default: `MIT`
 
 ```
 ? Which license do you want to use?
-  Apache 2.0
 ❯ MIT
+  Apache 2.0
   Unlicense
   FreeBSD
   NewBSD

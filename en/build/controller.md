@@ -54,9 +54,9 @@ module.exports = class FirstController extends Controller {
 
 A stub for testing our Controller.
 
+```js
 const assert = require('assert')
 
-```js
 describe('FirstController', () => {
   it('should exist', () => {
     assert(global.app.controllers.FirstController)

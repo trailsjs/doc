@@ -9,7 +9,7 @@ This guide will walk through adding functionality to a new application, and expl
 
 ### [Controller](controller.md)
 
-The first section of this guide walks through creating a new Controller, implementing handlers, and configuring routes.
+The first section of this guide walks through creating a new Controller, implementing handlers, and configuring routes. We'll cover how to build endpoints for both [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) and [GraphQL](http://www.graphql.com/).
 
 ### [Service](service.md)
 

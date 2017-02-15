@@ -27,3 +27,7 @@ A Model represents a domain object by defining its schema and where it is access
 ## [Resolver](resolver.md)
 
 A Resolver describes the techniques necessary for translating data in a persistent store (e.g. database) to/from [Model](model.md) representations.
+
+## [Policy](policy.md)
+
+A Policy is a special kind of handler that decides whether to forward requests to the Controllers.

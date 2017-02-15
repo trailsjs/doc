@@ -41,8 +41,6 @@ A stub for the `FirstController` class.
 ```js
 // api/controllers/FirstController.js
 
-const Controller = require('trails/controller')
-
 /**
  * @module FirstController
  * @description handles hello world requests.
@@ -84,7 +82,7 @@ module.exports = class FirstController extends Controller {
   /**
    * Tell the client "hello"
    */
-	sayHello (request, reply) {
+  sayHello (request, reply) {
     reply({
       message: "hello world!"
     })
@@ -154,14 +152,10 @@ Congratulations! The response code [`200`](https://en.wikipedia.org/wiki/List_of
 Typically, the server will send more interesting responses to the client, and base those responses on arguments that the client sends along with the request. Based on the client's `name`, we can easily customize the content of the response:
 
 ```js
-// api/controllers/FirstController.js
-
-// ...
-
   /**
    * Tell the client "hello"
    */
-	sayHello (request, reply) {
+  sayHello (request, reply) {
     const { name } = request.query
 
     reply({
@@ -185,14 +179,10 @@ We can utilize the Route `path` itself to help us parameterize client requests. 
 First, we'll extract the `prefix` parameter from the path itself:
 
 ```js
-// api/controllers/FirstController.js
-
-// ...
-
   /**
    * Tell the client something special!
    */
-	sayHello (request, reply) {
+  sayHello (request, reply) {
     const { name } = request.query
     const { prefix } = request.params
 

@@ -1,4 +1,5 @@
-*If you haven't yet created a Trails Application, [**Start**](../start.md) there first.*
+- *If you haven't yet created a Trails Application, [**Start**](../start.md) there first.*
+- *This is a walkthrough guide which illustrates key concepts. If you're looking for the API docs, see the [**API Reference**](../ref/README.md) instead.*
 
 # 2. Build
 
@@ -27,5 +28,3 @@ If your application deals with data, you'll want to encapsulate your schema in M
 ### [Resolver](resolver.md)
 
 Resolvers are to Models as Services are to Controllers. They inform the application how the Model layer interacts with the persistence layer (database).
-
-*This is a walkthrough guide which illustrates key concepts. Here's a link to the [API Reference](../ref/README.md) if you're looking for that instead.*

@@ -52,7 +52,7 @@ module.exports = class VersionService extends Service {
       'node',
       'npm',
       'yarn',
-      'nginx
+      'nginx'
     ]
   }
 

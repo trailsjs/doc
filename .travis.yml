@@ -1,5 +1,8 @@
 language: generic
 
+notifications:
+  email: false
+
 deploy:
   provider: s3
   bucket: cdn.trailsjs.io

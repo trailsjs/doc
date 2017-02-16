@@ -14,6 +14,9 @@ In your console, start the interactive installer by running:
 
 #### `yo trails`
 
+If you're running Windows you may have to add the npm install directory to the Windows Path in the environment variables.
+Ex. C:\Users\username\AppData\Roaming\npm
+
 #### 1. Choose web Server
 
 Default: `hapi`.

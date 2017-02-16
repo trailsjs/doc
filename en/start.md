@@ -12,11 +12,11 @@ Trails includes an interactive installer that guides us through the process of s
 
 ## Create a New App
 
-Now, create a new directory for your application and navigate to that directory in your console. For example, in Mac/Linux:
+Now, create a new directory for your application and navigate to that directory in your console. For example:
 
 ```bash
-$ mkdir helloworld
-$ cd helloworld
+mkdir helloworld
+cd helloworld
 ```
 
 In your console, start the interactive installer by running:

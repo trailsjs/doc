@@ -1,21 +1,29 @@
 # Start
 
-This guide will take you from zero to blazing new trails in just a few steps. If you haven't yet installed Node, grab it from [nodejs.org](https://nodejs.org/en/).
+Trails is a framework, and is downloadable as a module from [**npm**](https://www.npmjs.com/package/trails). This guide will walk through how to set up a new Trails application using the Trails installer.
+
+If you haven't yet installed Node, download it from [**nodejs.org**](https://nodejs.org/en/) and follow the instructions there.
 
 ## Install Trails
 
-Trails includes an interactive installer that guides us through the process of setting up a new app. First, download the installer:
+Trails includes an interactive installer that guides us through the process of setting up a new app. First, download the installer using npm:
 
 #### `npm install -g yo generator-trails`
 
 ## Create a New App
 
+Now, create a new directory for your application and navigate to that directory in your console. For example, in Mac/Linux:
+
+```bash
+$ mkdir helloworld
+$ cd helloworld
+```
+
 In your console, start the interactive installer by running:
 
 #### `yo trails`
 
-If you're running Windows you may have to add the npm install directory to the Windows Path in the environment variables.
-Ex. C:\Users\username\AppData\Roaming\npm
+*If you're in Windows you may have to add the npm install directory to the `PATH` environment variable. e.g. `C:\Users\username\AppData\Roaming\npm`. See also: [http://stackoverflow.com/a/32159233/291180](http://stackoverflow.com/a/32159233/291180).
 
 #### 1. Choose web Server
 

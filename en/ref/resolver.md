@@ -1,6 +1,6 @@
 *If you're looking for the walkthrough guide on Models, see: [2.4 Model](../build/model.md)*
 
-# 9.6 Resolver API
+# 9.7 Resolver API
 
 ## `class` Resolver
 

@@ -1,6 +1,6 @@
 *If you're looking for the walkthrough guide on Models, see: [2.4 Model](../build/model.md)*
 
-# 9.5 Model API
+# 9.6 Model API
 
 ## `class` Model
 
@@ -40,4 +40,4 @@ Return the id of the Model. e.g. for a Model called `User`, the `id` will be `us
 
 A reference to this model's `Resolver`.
 
-## Next: [Resolver API](model.md)
+## Next: [Resolver API](resolver.md)

@@ -90,7 +90,6 @@ module.exports = class FirstController extends Controller {
 }
 ```
 
-
 ## Configure a Route
 
 In order for the request to reach the handler, we configure a **Route** to map the handler method to a URL.

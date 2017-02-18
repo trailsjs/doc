@@ -1,4 +1,4 @@
-# Trailpack API
+# 9.2 Trailpack API
 
 ## `class` Trailpack
 
@@ -112,3 +112,5 @@ module.exports = class BootstrapTrailpack extends Trailpack {
 ## `unload ()`
 
 This method is invoked when Trails is shutting down, either due to an unrecoverable runtime error, or because the user has explicitly invoked `.stop()`. This method should instruct the trailpack to perform any necessary cleanup with the expectation that the app will stop or reload soon thereafter. If your trailpack runs a daemon or any other thing that may occupy the event loop, implementing this method is important for Trails to exit correctly.
+
+## Next: [Controller API](controller.md)

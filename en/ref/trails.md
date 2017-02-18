@@ -1,4 +1,4 @@
-# Trails API
+# 9.1 Trails API
 
 ## `class` Trails `extends` [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter)
 
@@ -245,3 +245,5 @@ The `package.json` for the `trails` module.
 this.app._trails.name     // 'trails'
 this.app._trails.version  // e.g. 3.0.0
 ```
+
+## Next: [Trailpack API](trailpack.md)

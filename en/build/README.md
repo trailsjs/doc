@@ -23,8 +23,8 @@ Policies decide whether a request should reach a Controller. If you'll be authen
 
 ### 2.4 [Model](model.md)
 
-If your application deals with data, you'll want to encapsulate your schema in Models.
+If your application deals with data, you'll want to encapsulate your schema and queries in Models and Resolvers.
 
 ### 2.5 [Resolver](resolver.md)
 
-Resolvers are to Models as Services are to Controllers. They inform the application how the Model layer interacts with the persistence layer (database).
+Resolvers are to Models as Services are to Controllers. They take care of the work involved with storing/retrieving data to/from the data store.

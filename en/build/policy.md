@@ -86,7 +86,9 @@ Now, requests to `/version/{packageName}` will first be validated by `TimePolicy
 ```json
 {
   "statusCode": 500,
-  "error": "We are currently closed."
+  "error": "We are currently closed.",
   "message": ""
 }
 ```
+
+### Next: [Model](model.md)

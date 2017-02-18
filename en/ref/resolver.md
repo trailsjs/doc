@@ -1,4 +1,4 @@
-*If you're looking for the walkthrough guide on Models, see: [2.4 Model](../build/model.md)*
+*If you're looking for the walkthrough guide on Resolvers, see: [2.5 Resolver](../build/resolver.md)*
 
 # 9.7 Resolver API
 

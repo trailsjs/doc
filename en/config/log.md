@@ -18,16 +18,16 @@ An example using the [*winston*](https://github.com/winstonjs/winston) logger:
 ```js
 // config/log.js
 module.exports = {
-	logger: new winston.Logger({
-		level: 'debug',
-		exitOnError: false,
-		transports: [
-			new (winston.transports.Console)({
-				prettyPrint: true,
-				colorize: true
-			})
-		]
-	})
+  logger: new winston.Logger({
+    level: 'debug',
+    exitOnError: false,
+    transports: [
+      new (winston.transports.Console)({
+        prettyPrint: true,
+        colorize: true
+      })
+    ]
+  })
 }
 ```
 
@@ -44,7 +44,7 @@ In this example, Winston is configured to log to the console, as well as a perma
 module.exports = {
   log: {
     logger: new winston.Logger({
-		  level: 'info',
+      level: 'info',
       exitOnError: false,
       transports: [
 

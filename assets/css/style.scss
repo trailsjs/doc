@@ -30,8 +30,13 @@ pre > code {
   font-family: "Monaco", "Consolas", monospace !important;
 }
 
+.err {
+  color: $green !important;
+  background-color: $brown !important;
+}
+
 // normal stuff
-.err, .nx {
+.nx {
   color: $light-brown !important;
 }
 

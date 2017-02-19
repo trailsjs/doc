@@ -5,6 +5,7 @@
 
 $green: #63A87B;
 $blue: #3A5566;
+$light-blue: #A6B2BA
 $brown: #3D3A31;
 $medium-brown: #82807B;
 $light-brown: #BBBAB7;
@@ -25,7 +26,8 @@ pre {
   background-color: $brown !important;
 }
 
-pre > code {
+code {
+  background-color: $brown !important;
   color: $light-brown !important;
   font-family: "Monaco", "Consolas", monospace !important;
 }
@@ -43,7 +45,10 @@ pre > code {
 // keywords
 .k, .kr {
   color: $green !important;
-  //color: $very-light-brown;
+}
+
+.nb {
+  color: $green !important;
 }
 
 // comments
@@ -57,6 +62,11 @@ pre > code {
 }
 
 // strings
-.s1 {
+.s1, .s2, .mi {
   color: $green !important;
+}
+
+// keys
+.nt, .na {
+  color: $light-blue;
 }

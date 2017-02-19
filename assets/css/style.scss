@@ -26,13 +26,14 @@ pre {
   background-color: $brown !important;
 }
 code {
-  font-size: 1.0em !important;
+  font-size: 0.9em !important;
   background-color: $very-light-brown !important;
   color: $brown !important;
   font-family: "Monaco", "Consolas", monospace !important;
 }
 
 pre > code {
+  font-size: 1.05em !important;
   background-color: $brown !important;
   color: $light-brown !important;
 }

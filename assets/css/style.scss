@@ -3,7 +3,13 @@
 
 @import "{{ site.theme }}";
 
-$section-headings-color: #63A87B;
-$body-text-color: #606c71;
-$body-link-color: #3A5566;
-$blockquote-text-color: #819198;
+$green: #63A87B;
+$blue: #3A5566;
+
+h1, h2, h3, h4, h5 {
+  color: $green !important;
+}
+
+a {
+  color: $blue !important;
+}

@@ -11,9 +11,11 @@ $medium-brown: #82807B;
 $light-brown: #BBBAB7;
 $very-light-brown: #E0E0DF;
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   color: $green !important;
 }
+h5 {
+  color: $brown !important;
 
 a {
   color: $blue !important;

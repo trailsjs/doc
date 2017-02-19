@@ -22,7 +22,9 @@ a {
 /**
  * code style
  */
-
+pre {
+  background-color: $brown !important;
+}
 code {
   background-color: $light-brown !important;
   color: $brown !important;

@@ -1,4 +1,4 @@
-*Previous: [Build](README.md)*
+*Previous: [Build](./)*
 
 # 2.3 Policy
 

@@ -5,6 +5,10 @@
 
 $green: #63A87B;
 $blue: #3A5566;
+$brown: #3D3A31;
+$medium-brown: #82807B;
+$light-brown: #BBBAB7;
+$very-light-brown: #E0E0DF;
 
 h1, h2, h3, h4, h5 {
   color: $green !important;
@@ -12,4 +16,44 @@ h1, h2, h3, h4, h5 {
 
 a {
   color: $blue !important;
+}
+
+/**
+ * code style
+ */
+pre {
+  background-color: $brown;
+}
+
+pre > code {
+  color: $light-brown;
+  font-family: "Monaco, Consolas, monospace";
+
+  > span {
+    // normal stuff
+    .err, .nx {
+      color: $light-brown;
+    }
+
+    // keywords
+    .k, .kr {
+      color: $green;
+      //color: $very-light-brown;
+    }
+
+    // comments
+    .cm, .c1 {
+      color: $medium-brown;
+    }
+
+    // punctuation
+    .p, .o {
+      color: $very-light-brown;
+    }
+
+    // strings
+    .s1 {
+      color: $green;
+    }
+  }
 }

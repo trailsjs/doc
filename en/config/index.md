@@ -2,7 +2,7 @@
 
 Trails provides a unified way to configure all facets of your application. All configuration files are located in the `config/` directory.
 
-## 3.1. [`index.js`](index.md)
+## 3.1. [`index.js`](manifest.md)
 
 A manifest of the available configuration files.
 

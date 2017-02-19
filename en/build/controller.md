@@ -124,7 +124,7 @@ The Controller method to route the request to. In the Route configuration above,
 
 - Request: `GET /first/sayHello`
 - Response:
-  ```js
+  ```json
   {
     "message": "hello world!"
   }
@@ -165,11 +165,11 @@ Typically, the server will send more interesting responses to the client, and ba
 
 - Request: `GET /first/sayHello?name=trailsjs`
 - Response:
-```js
-{
-  "message": "hello trailsjs!"
-}
-```
+  ```json
+  {
+    "message": "hello trailsjs!"
+  }
+  ```
 
 ### Create a Dynamic REST Handler (Path Parameters)
 
@@ -208,11 +208,11 @@ Now our request/response looks like this:
 
 - Request: `GET /first/sayHello/howdy?name=trailsjs`
 - Response:
-```js
-{
-  "message": "howdy trailsjs!"
-}
-```
+  ```json
+  {
+    "message": "howdy trailsjs!"
+  }
+  ```
 
 Pretty cool!
 

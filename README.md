@@ -47,6 +47,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Resolver](en/ref/resolver.md)
   - [Policy](en/ref/policy.md)
 10. [About Trails](en/about/)
+  - [What is Trails?](en/about/trails.md)
   - [Design Theory](en/about/theory.md)
   - [Release Schedule](en/about/schedule.md)
   - [Contributing](en/about/contribute.md)

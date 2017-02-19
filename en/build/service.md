@@ -65,7 +65,7 @@ module.exports = class VersionService extends Service {
       throw new Error(`${packageName} not supported`)
     }
 
-    return request(`http://semver.io/${packageName}`)
+    return request(`semver.io/${packageName}`)
   }
 }
 ```

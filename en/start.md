@@ -27,7 +27,7 @@ In your console, start the interactive installer by running:
 
 *If you're in Windows you may have to add the npm install directory to the `PATH` environment variable. e.g. `C:\Users\username\AppData\Roaming\npm`. See also: [http://stackoverflow.com/a/32159233/291180](http://stackoverflow.com/a/32159233/291180).
 
-#### 1. Choose web Server
+### 1. Choose web Server
 
 Default: `hapi`.
 
@@ -43,7 +43,7 @@ Checking for updates...
   other
 ```
 
-#### 2. Choose ORM
+### 2. Choose ORM
 
 Default: `waterline`
 
@@ -61,7 +61,7 @@ An ORM (object-relational mapping) can be included with your new Trails applicat
 ```
 
 
-#### 3. Use Footprints?
+### 3. Use Footprints?
 
 Default: `yes`
 
@@ -71,7 +71,7 @@ Trails can automatically generate RESTful endpoints based on the Models you defi
 ? Do you want to use Footprints (automatic REST API from models) ? (Y/n)
 ```
 
-#### 4. Module Information
+### 4. Module Information
 
 Specify the name, description, and other attributes of your new module. These values will be set in the module's `package.json`.
 
@@ -85,7 +85,7 @@ Specify the name, description, and other attributes of your new module. These va
 ? Package keywords (comma to split) trails, quickstart, documentation
 ```
 
-#### 5. License
+### 5. License
 
 Default: `MIT`
 
@@ -100,7 +100,7 @@ Default: `MIT`
   No License (Copyrighted)
 ```
 
-#### 6. Done!
+### 6. Done!
 
 A bunch of new files will be created, and you'll be able to fire up your new Trails application and start building features.
 

@@ -89,15 +89,15 @@ const UserResolver = require('../resolvers/UserResolver')
  * @description A User of the application
  */
 module.exports = class User extends Model {
-	static config () {
+  static config () {
     return {
       resolver: UserResolver
     }
-	}
+  }
 
-	static schema () {
+  static schema () {
 
-	}
+  }
 }
 ```
 
@@ -108,7 +108,7 @@ For each Model, we specify the store that it belongs to. We created a store call
 ```js
 // api/models/User.js
 
-	static config () {
+  static config () {
     return {
       resolver: UserResolver,
       store: 'devdb'

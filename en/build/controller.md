@@ -124,11 +124,11 @@ The Controller method to route the request to. In the Route configuration above,
 
 - Request: `GET /first/sayHello`
 - Response:
-```js
-{
-  "message": "hello world!"
-}
-```
+  ```js
+  {
+    "message": "hello world!"
+  }
+  ```
 
 ### Try it out!
 

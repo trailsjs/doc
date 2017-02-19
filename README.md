@@ -48,8 +48,8 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Policy](en/ref/policy.md)
 10. [About Trails](en/about/)
   - [Design Theory](en/about/theory.md)
-  - [Release Schedule](https://github.com/trailsjs/trails/blob/master/ROADMAP.md)
-  - [Contributing](https://github.com/trailsjs/trails/blob/master/.github/CONTRIBUTING.md)
+  - [Release Schedule](en/about/schedule/md)
+  - [Contributing](en/about/contribute.md)
 11. [Support](http://trailsjs.io/support)
 
 # Available Languages

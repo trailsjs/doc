@@ -1,3 +1,7 @@
+#### [Docs](../../) / [About Trails](./) / Theory
+
+# 10.2 Design Theory
+
 ## Overview
 
 **The Trails framework has exactly one feature: the ability to harmoniously manage Trailpacks.** The capability available to the developer is thus an emergent property of the Trailpacks the user has installed. This article describes the reasoning behind this design and how it facilitates both modularity and extensibility.

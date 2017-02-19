@@ -1,4 +1,4 @@
-*Previous: [Build](index.md)*
+#### [Docs](../../) / [Build](./) / Controller
 
 # 2.1 Controller
 

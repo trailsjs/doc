@@ -1,4 +1,4 @@
-*Previous: [Model](model.md)*
+#### [Docs](../../) / [Build](./) / Resolver
 
 # 2.5 Resolver
 

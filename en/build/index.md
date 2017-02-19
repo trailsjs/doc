@@ -1,5 +1,6 @@
-- *If you haven't yet created a Trails Application, [**Start**](../start.md) there first.*
-- *This is a walkthrough guide which illustrates key concepts. If you're looking for the API docs, see the [**API Reference**](../ref/index.md) instead.*
+#### [Docs](../../) / Build
+
+##### *If you haven't yet created a Trails Application, [**Start**](../start.md) there first.*
 
 # 2. Build
 

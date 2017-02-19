@@ -39,7 +39,7 @@ Path parameters can be defined, and will be passed into their handlers. [Full Sp
 module.exports = [
   {
     method: [ 'GET' ],
-    path: /map/tile/{x}/{y}/{z?}
+    path: '/map/tile/{x}/{y}/{z?}',
     handler: 'MapController.getTile'
   }
 ]
@@ -74,7 +74,7 @@ Some doc generation tools, such as Swagger, can use the `config` object to glean
 ```js
 {
   method: [ 'GET' ],
-  path: /map/tile/{x}/{y}/{z?},
+  path: '/map/tile/{x}/{y}/{z?}',
   handler: 'MapController.getTile',
   config: {
     description: 'Render a map Tile',
@@ -91,7 +91,7 @@ Pre-requisites can be defined for a route, which are a list of [Trails Policies]
 ```js
 {
   method: [ 'GET' ],
-  path: /map/tile/{x}/{y}/{z?},
+  path: '/map/tile/{x}/{y}/{z?}',
   handler: 'MapController.getTile',
   config: {
     /**

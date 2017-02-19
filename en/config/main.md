@@ -1,4 +1,4 @@
-# `main.js`
+# 3.2. `main.js`
 
 Declare the Trailpacks to load, set filesystem paths, and other basic application settings.
 

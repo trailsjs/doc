@@ -1,32 +1,32 @@
-# Configuration
+# 3. Configuration
 
 Trails provides a unified way to configure all facets of your application. All configuration files are located in the `config/` directory.
 
-## [`index.js`](index.md)
+## 3.1. [`index.js`](index.md)
 
 A manifest of the available configuration files.
 
-## [`main.js`](main.md)
+## 3.2. [`main.js`](main.md)
 
 Declare the Trailpacks to load, set filesystem paths, and other basic application settings.
 
-## [`log.js`](log.md)
+## 3.3. [`log.js`](log.md)
 
 Setup the logger that Trails will use during runtime.
 
-## [`routes.js`](routes.md)
+## 3.4. [`routes.js`](routes.md)
 
 Define how web requests are routed to controllers.
 
-## [`stores.js`](stores.md)
+## 3.5. [`stores.js`](stores.md)
 
 Define data stores. Each [Model](../build/model.md) maps itself to a "store".
 
-## [`i18n.js`](i18n.md)
+## 3.6. [`i18n.js`](i18n.md)
 
 Setup internationalization, define multi-language mappings, etc.
 
-## [`web.js`](web.md)
+## 3.7. [`web.js`](web.md)
 
 Configure the web server. Set the listening port, load any plugins, and define advanced web server settings.
 

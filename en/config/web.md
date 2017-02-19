@@ -1,4 +1,4 @@
-# `web.js`
+# 3.7. `web.js`
 
 Configure the web server. Set the listening port, load any plugins, and define advanced web server settings. Trails supports several web servers, so the particular configuration options available will be provided by the chosen web server Trailpack (e.g., express, hapi).
 

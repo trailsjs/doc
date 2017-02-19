@@ -1,4 +1,4 @@
-# `log.js`
+# 3.3. `log.js`
 
 Setup the logger that Trails will use during runtime.
 

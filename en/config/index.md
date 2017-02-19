@@ -1,4 +1,4 @@
-# `index.js`
+# 3.1. `index.js`
 
 A manifest of the available configuration files. Configuration files added/created should be required in this file. This file should not be used to define any configuration values.
 

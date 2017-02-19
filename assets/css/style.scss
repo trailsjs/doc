@@ -42,6 +42,10 @@ pre > code {
   background-color: $brown !important;
 }
 
+.language-json * .err {
+  color: $medium-brown !important;
+}
+
 // normal stuff
 .nx {
   color: $light-brown !important;

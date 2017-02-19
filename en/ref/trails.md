@@ -220,7 +220,7 @@ Type: `Object`
 The application's Services
 
 ```js
-this.app.services.MapService.getTile({ x, y})
+this.app.services.MapService.getTile({ x, y })
   .then(tile => reply(tile)
 ```
 

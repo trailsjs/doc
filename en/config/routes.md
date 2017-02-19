@@ -1,3 +1,5 @@
+#### [Docs](../../) / [Configuration](./) / routes.js
+
 # 3.4. `routes.js`
 
 Define how web requests are routed to controllers. The Route objects are modeled on the hapi.js [Route Specification](https://hapijs.com/tutorials/routing). Some plugins such as [trailpack-footprints](https://github.com/trailsjs/trailpack-footprints) may auto-generate Route configuration based on other facets of the application.

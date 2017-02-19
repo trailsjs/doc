@@ -1,3 +1,5 @@
+#### [Docs](../../) / Configuration
+
 # 3. Configuration
 
 Trails provides a unified way to configure all facets of your application. All configuration files are located in the `config/` directory.

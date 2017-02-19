@@ -124,7 +124,7 @@ The Controller method to route the request to. In the Route configuration above,
 
 - Request: `GET /first/sayHello`
 - Response:
-```json
+```js
 {
   "message": "hello world!"
 }
@@ -165,7 +165,7 @@ Typically, the server will send more interesting responses to the client, and ba
 
 - Request: `GET /first/sayHello?name=trailsjs`
 - Response:
-```json
+```js
 {
   "message": "hello trailsjs!"
 }
@@ -208,7 +208,7 @@ Now our request/response looks like this:
 
 - Request: `GET /first/sayHello/howdy?name=trailsjs`
 - Response:
-```json
+```js
 {
   "message": "howdy trailsjs!"
 }

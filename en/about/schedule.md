@@ -1,6 +1,6 @@
 #### [Docs](../../) / [About Trails](./) / Release Schedule
 
-# 10.3 Release Schedule
+# 10.3. Release Schedule
 
 The trails.js team maintains this document to serve as a foward-looking plan for how the framework will grow and evolve. The goal of the roadmap is to assist developers in planning the future of their projects. Please submit an Issue or Pull Request if you feel that something should be added or changed in this document, and we are happy to discuss.
 

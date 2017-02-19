@@ -1,6 +1,6 @@
 #### [Docs](../../) / [About Trails](./) / Contribute
 
-# 10.4 Contributor's Guide
+# 10.4. Contributor's Guide
 
 This guide is designed to help you get off the ground quickly contributing to Trails.js, Trailpacks and the Trails.js ecosystem.  The goal of our community is to make it easy for members of all skill levels to contribute.  This guide will help you write useful issues, propose eloquent feature requests, and submit top-notch code that can be merged quickly.  
 

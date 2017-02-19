@@ -1,6 +1,6 @@
 #### [Docs](../../) / [About Trails](./) / Theory
 
-# 10.2 Design Theory
+# 10.2. Design Theory
 
 ## Overview
 

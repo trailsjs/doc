@@ -27,33 +27,31 @@ pre {
 
 pre > code {
   color: $light-brown !important;
-  font-family: "Monaco, Consolas, monospace" !important;
+  font-family: "Monaco", "Consolas", monospace !important;
 }
 
-pre > code > span {
-  // normal stuff
-  .err, .nx {
-    color: $light-brown !important;
-  }
+// normal stuff
+.err, .nx {
+  color: $light-brown !important;
+}
 
-  // keywords
-  .k, .kr {
-    color: $green !important;
-    //color: $very-light-brown;
-  }
+// keywords
+.k, .kr {
+  color: $green !important;
+  //color: $very-light-brown;
+}
 
-  // comments
-  .cm, .c1 {
-    color: $medium-brown !important;
-  }
+// comments
+.cm, .c1 {
+  color: $medium-brown !important;
+}
 
-  // punctuation
-  .p, .o {
-    color: $very-light-brown !important;
-  }
+// punctuation
+.p, .o {
+  color: $very-light-brown !important;
+}
 
-  // strings
-  .s1 {
-    color: $green !important;
-  }
+// strings
+.s1 {
+  color: $green !important;
 }

@@ -20,7 +20,7 @@ Initialize the application with the provided `app` definition. All configured Tr
 
 In a [New Trails Application](../start.md), Trails is instantiated in `server.js` like so:
 
-```js
+```es6
 const Trails = require('trails')
 const app = require('./')
 const trails = new Trails(app)
@@ -130,13 +130,13 @@ Log a message.
 - warn
 - error
 
-```js
+```es6
 this.app.log.debug('hello')
 ```
 
 Inside resource classes (e.g. Controller, Service, Policy) and Trailpacks, the following shorthand is available:
 
-```js
+```es6
 this.log.debug('hello')
 ```
 
@@ -144,14 +144,14 @@ this.log.debug('hello')
 
 Translate a message according to the application's [i18n Configuration](../config/i18n.md).
 
-```js
+```es6
 this.app.__('hello.world')
 this.app.t('hello.world')
 ```
 
 Inside resource classes (e.g. Controller, Service, Policy) and Trailpacks, the following shorthand is available:
 
-```js
+```es6
 this.__('hello.world')
 this.t('hello.world')
 ```
@@ -164,7 +164,7 @@ Type: `Object`
 
 A serialized cache of `process.env`. Accessing environment variables using this field is more performant than using `process.env` directly.
 
-```js
+```es6
 {
   NODE_ENV: 'development',
   SHELL: '/bin/bash',
@@ -180,7 +180,7 @@ Type: `Object`
 
 A serialized cache of `process.versions`.
 
-```js
+```es6
 {
   http_parser: '2.7.0',
   node: '6.9.4',
@@ -196,7 +196,7 @@ Type: `Map`
 
 The app configuration.
 
-```js
+```es6
 this.app.config.get('main.paths.root') // e.g. /home/trailsjs/workspace/myapp
 ```
 
@@ -206,7 +206,7 @@ Type: `Object`
 
 The application's Models
 
-```js
+```es6
 const user = new this.app.models.User({
   username: 'trails',
   // ...
@@ -219,7 +219,7 @@ Type: `Object`
 
 The application's Services
 
-```js
+```es6
 this.app.services.MapService.getTile({ x, y})
   .then(tile => reply(tile)
 ```
@@ -230,7 +230,7 @@ Type: `Object`
 
 The `package.json` for the running module.
 
-```js
+```es6
 this.app.pkg.name     // e.g. 'my-trails-app'
 this.app.pkg.version  // e.g. 0.0.0
 ```
@@ -241,7 +241,7 @@ Type: `Object`
 
 The `package.json` for the `trails` module.
 
-```js
+```es6
 this.app._trails.name     // 'trails'
 this.app._trails.version  // e.g. 3.0.0
 ```

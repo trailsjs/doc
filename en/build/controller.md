@@ -30,7 +30,7 @@ The generator will create/update the following files:
 
 Each directory in a Trails application contains a manifest of the modules contained therein. Trails does not assume any particular directory structure, so you may separate these files into other folders--or other modules--if you wish, by updating the manifest. This is discussed further in [Extend: Re-usable Services](../extend/services.md). The generators will update these automatically, and you usually shouldn't need to be concerned with them.
 
-```js
+```es6
 exports.FirstController = require('./FirstController')
 ```
 
@@ -38,7 +38,7 @@ exports.FirstController = require('./FirstController')
 
 A stub for the `FirstController` class.
 
-```js
+```es6
 // api/controllers/FirstController.js
 
 /**
@@ -54,7 +54,7 @@ module.exports = class FirstController extends Controller {
 
 A stub for testing our Controller.
 
-```js
+```es6
 const assert = require('assert')
 
 describe('FirstController', () => {
@@ -70,7 +70,7 @@ describe('FirstController', () => {
 
 Handlers are aptly-named: they *handle* web requests. Their job is to parse incoming requests, and to respond to the client with the information it has requested. In our `FirstController`, let's create a handler called `sayHello` that simply returns the following JSON:
 
-```js
+```es6
 // api/controllers/FirstController.js
 
 /**
@@ -94,7 +94,7 @@ module.exports = class FirstController extends Controller {
 
 In order for the request to reach the handler, we configure a **Route** to map the handler method to a URL.
 
-```js
+```es6
 // config/routes.js
 module.exports = [
   {
@@ -124,7 +124,7 @@ The Controller method to route the request to. In the Route configuration above,
 
 - Request: `GET /first/sayHello`
 - Response:
-```json
+```es6on
 {
   "message": "hello world!"
 }
@@ -150,7 +150,7 @@ Congratulations! The response code [`200`](https://en.wikipedia.org/wiki/List_of
 
 Typically, the server will send more interesting responses to the client, and base those responses on arguments that the client sends along with the request. Based on the client's `name`, we can easily customize the content of the response:
 
-```js
+```es6
   /**
    * Tell the client "hello"
    */
@@ -165,7 +165,7 @@ Typically, the server will send more interesting responses to the client, and ba
 
 - Request: `GET /first/sayHello?name=trailsjs`
 - Response:
-```json
+```es6on
 {
   "message": "hello trailsjs!"
 }
@@ -177,7 +177,7 @@ We can utilize the Route `path` itself to help us parameterize client requests. 
 
 First, we'll extract the `prefix` parameter from the path itself:
 
-```js
+```es6
   /**
    * Tell the client something special!
    */
@@ -193,7 +193,7 @@ First, we'll extract the `prefix` parameter from the path itself:
 
 And update the route config to match a `prefix` path parameter:
 
-```js
+```es6
 // config/routes.js
 module.exports = [
   {
@@ -208,7 +208,7 @@ Now our request/response looks like this:
 
 - Request: `GET /first/sayHello/howdy?name=trailsjs`
 - Response:
-```json
+```es6on
 {
   "message": "howdy trailsjs!"
 }

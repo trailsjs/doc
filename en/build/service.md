@@ -13,7 +13,7 @@ Let's build a simple web service that returns the latest version of some popular
 
 ### Implement the Controller
 
-```js
+```es6
 // api/controller/VersionController.js
 
 module.exports = class VersionController extends Controller {
@@ -40,7 +40,7 @@ module.exports = class VersionController extends Controller {
 
 `VersionService` will request version information from [semver.io](http://semver.io), an external web service that hosts version information on nodejs, npm, yarn, and other tools. Separating out this business logic from the request-handling duties of the Controller is a good practice for separating concerns and organizing code.
 
-```js
+```es6
 // api/services/VersionService.js
 
 const request = require('request-promise')
@@ -72,7 +72,7 @@ module.exports = class VersionService extends Service {
 
 ### Configure the Route
 
-```js
+```es6
 // config/routes.js
 module.exports = [
   {
@@ -87,7 +87,7 @@ module.exports = [
 
 - Request: `GET /version/node`
 - Response: 
-```json
+```es6on
 {
   "node": "v7.5.0"
 }
@@ -95,7 +95,7 @@ module.exports = [
 
 - Request: `GET /version/npm`
 - Response: 
-```json
+```es6on
 {
   "node": "v4.2.0"
 }
@@ -103,7 +103,7 @@ module.exports = [
 
 - Request: `GET /version/fancypackage`
 - Response: 
-```json
+```es6on
 {
   "statusCode": 500,
   "error": "fancypackage not supported",

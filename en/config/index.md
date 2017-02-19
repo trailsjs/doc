@@ -38,7 +38,7 @@ Trails can load environment-dependent configuration based on the `NODE_ENV` envi
 
 When `NODE_ENV=production`, the following configuration in `config/env/production.js` will override the existing value of `config.web.hostname` set in `config/web.js`.
 
-```js
+```es6
 // config/env/production.js
 module.exports = {
   web: {
@@ -53,7 +53,7 @@ module.exports = {
 
 The application configuration is available at `this.config` inside all Controllers, Services, and Policies. The nested objects in the configuration files are flattened into a [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
-```js
+```es6
 // api/services/MapService.js
 module.export = class MapService extends Service {
 
@@ -72,7 +72,7 @@ module.export = class MapService extends Service {
 
 The configuration is frozen and *immutable* during runtime; specifically, the configuration is frozen after all Trailpacks complete their `configure` stage.
 
-```js
+```es6
 // trailpack-mapnik/index.js
 module.exports = class MapnikTrailpack extends Trailpack {
 

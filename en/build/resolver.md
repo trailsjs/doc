@@ -10,7 +10,7 @@ First, we need to tie off some loose ends from our previous guide on Models. Wha
 
 When creating new Models (via `yo:trails model`), the generator looks at the store config (`config.stores`) to figure out which store the Model will belong to. In our example, we only configured one store. When multiple stores are configured, the generator will ask to which store the new Model will belong.
 
-```js
+```es6
 // api/resolvers/UserResolver.js
 
 module.exports = class UserResolver extends KnexResolver {
@@ -30,7 +30,7 @@ The `Model` and `Resolver` superclasses (from which `UserModel` and `UserResolve
 
 Of course, we'll often want to do more specific things other than these four common operations. Let's look at an example.
 
-```js
+```es6
 // api/resolvers/UserResolver.js
 
   /**
@@ -44,7 +44,7 @@ Of course, we'll often want to do more specific things other than these four com
 
 Now, we expose this functionality to the application by implementing the corresponding method on `UserModel`:
 
-```js
+```es6
 // api/models/UserModel.js
 
   /**
@@ -59,7 +59,7 @@ Now, we expose this functionality to the application by implementing the corresp
 
 Some operations can be disabled by the developer for security or other reasons. For example, read-only Models could inherit from a `ReadOnlyModel` class that does the following:
 
-```js
+```es6
 // api/models/ReadOnlyModel.js
 
 module.exports = class ReadOnlyModel extends Model {

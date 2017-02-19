@@ -2,7 +2,7 @@
 
 Define how web requests are routed to controllers. The Route objects are modeled on the hapi.js [Route Specification](https://hapijs.com/tutorials/routing). Some plugins such as [trailpack-footprints](https://github.com/trailsjs/trailpack-footprints) may auto-generate Route configuration based on other facets of the application.
 
-```js
+```es6
 module.exports = [
 
  /**
@@ -32,7 +32,7 @@ The route will handle requests to URLs that match `path`.
 
 Path parameters can be defined, and will be passed into their handlers. [Full Specification](https://hapijs.com/api#path-parameters).
 
-```js
+```es6
 // config/routes.js
 module.exports = [
   {
@@ -43,7 +43,7 @@ module.exports = [
 ]
 ```
 
-```js
+```es6
 // api/controllers/MapController.js
 module.exports = class MapController extends Controller {
 
@@ -69,7 +69,7 @@ Each route can define other custom properties in a nested `config` object. [Full
 Some doc generation tools, such as Swagger, can use the `config` object to glean contextual information about the route. Full
 
 
-```js
+```es6
 {
   method: [ 'GET' ],
   path: /map/tile/{x}/{y}/{z?},
@@ -86,7 +86,7 @@ Some doc generation tools, such as Swagger, can use the `config` object to glean
 
 Pre-requisites can be defined for a route, which are a list of [Trails Policies](../build/policy.md) that must pass before the route handler is invoked.
 
-```js
+```es6
 {
   method: [ 'GET' ],
   path: /map/tile/{x}/{y}/{z?},

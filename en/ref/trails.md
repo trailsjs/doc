@@ -1,3 +1,5 @@
+#### [Docs](../../) / [API Reference](./) / Trails
+
 # 9.1 Trails API
 
 ## `class` Trails `extends` [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter)

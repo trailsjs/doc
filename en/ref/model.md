@@ -1,4 +1,6 @@
-*If you're looking for the walkthrough guide on Models, see: [2.4 Model](../build/model.md)*
+#### [Docs](../../) / [API Reference](./) / Model
+
+##### *If you're looking for the walkthrough guide on Models, see: [2.4 Model](../build/model.md)*
 
 # 9.6 Model API
 

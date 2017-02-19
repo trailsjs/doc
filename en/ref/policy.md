@@ -1,4 +1,6 @@
-*If you're looking for the walkthrough guide on Policies, see: [2.3 Policy](../build/policy.md)*
+#### [Docs](../../) / [API Reference](./) / Policy
+
+##### *If you're looking for the walkthrough guide on Policies, see: [2.3 Policy](../build/policy.md)*
 
 # 9.4 Policy API
 

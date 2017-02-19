@@ -1,4 +1,6 @@
-*If you're looking for the walkthrough guide on Resolvers, see: [2.5 Resolver](../build/resolver.md)*
+#### [Docs](../../) / [API Reference](./) / Resolver
+
+##### *If you're looking for the walkthrough guide on Resolvers, see: [2.5 Resolver](../build/resolver.md)*
 
 # 9.7 Resolver API
 

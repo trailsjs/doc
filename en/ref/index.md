@@ -1,4 +1,4 @@
-[Docs](../../) / [API Reference](./)
+##### [Docs](../../) / [API Reference](./)
 
 # 9. API Reference
 

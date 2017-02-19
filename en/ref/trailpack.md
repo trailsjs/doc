@@ -1,3 +1,5 @@
+#### [Docs](../../) / [API Reference](./) / Trailpack
+
 # 9.2 Trailpack API
 
 ## `class` Trailpack

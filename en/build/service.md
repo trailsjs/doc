@@ -87,28 +87,28 @@ module.exports = [
 
 - Request: `GET /version/node`
 - Response: 
-```json
-{
-  "node": "v7.5.0"
-}
-```
+  ```json
+  {
+    "node": "v7.5.0"
+  }
+  ```
 
 - Request: `GET /version/npm`
 - Response: 
-```json
-{
-  "node": "v4.2.0"
-}
-```
+  ```json
+  {
+    "node": "v4.2.0"
+  }
+  ```
 
 - Request: `GET /version/fancypackage`
 - Response: 
-```json
-{
-  "statusCode": 500,
-  "error": "fancypackage not supported",
-  "message": ""
-}
-```
+  ```json
+  {
+    "statusCode": 500,
+    "error": "fancypackage not supported",
+    "message": ""
+  }
+  ```
 
 ### Next: [Policy](policy.md)

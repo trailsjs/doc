@@ -73,22 +73,22 @@ Now, requests to `/version/{packageName}` will first be validated by `TimePolicy
 
 - Request: `GET /version/node`
 - Response: 
-```json
-{
-  "node": "v7.5.0"
-}
-```
+  ```json
+  {
+    "node": "v7.5.0"
+  }
+  ```
 
 #### At 9pm:
 
 - Request: `GET /version/node`
 - Response: 
-```json
-{
-  "statusCode": 500,
-  "error": "We are currently closed.",
-  "message": ""
-}
-```
+  ```json
+  {
+    "statusCode": 500,
+    "error": "We are currently closed.",
+    "message": ""
+  }
+  ```
 
 ### Next: [Model](model.md)

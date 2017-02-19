@@ -88,8 +88,8 @@ module.exports = {
    */
   cors: false,
 
-	middlewares: {
-		order: [
+  middlewares: {
+    order: [
       // ... load custom middleware
     ],
 

@@ -13,7 +13,7 @@ In order to boot, Trails requires that the value `config.log.logger` is set with
 
 An example using the [*winston*](https://github.com/winstonjs/winston) logger:
 
-```es6
+```js
 // config/log.js
 module.exports = {
 	logger: new winston.Logger({
@@ -37,7 +37,7 @@ When deploying to production, you will likely want to configure the logger to le
 
 In this example, Winston is configured to log to the console, as well as a permanent logfile.
 
-```es6
+```js
 // config/env/production.js
 module.exports = {
   log: {

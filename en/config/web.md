@@ -2,7 +2,7 @@
 
 Configure the web server. Set the listening port, load any plugins, and define advanced web server settings. Trails supports several web servers, so the particular configuration options available will be provided by the chosen web server Trailpack (e.g., express, hapi).
 
-```es6
+```js
 // config/web.js
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
 
 The [Hapi Trailpack](https://github.com/trailsjs/trailpack-hapi) provides the ability to configure the [Hapi](https://hapijs.com/) web server in Trails.
 
-```es6
+```js
 // config/web.js
 
 module.exports = {
@@ -74,7 +74,7 @@ module.exports = {
 
 The [Express Trailpack](https://github.com/trailsjs/trailpack-express) provides the ability to configure the [Express](http://expressjs.com) web server in Trails.
 
-```es6
+```js
 // config/web.js
 
 module.exports = {

@@ -2,7 +2,7 @@
 
 Define data stores. Each [Model](../build/model.md) maps itself to a "store". A single Trails application can configure many data stores of similar or different types.
 
-```es6
+```js
 // config/stores.js
 
 module.exports = {
@@ -47,7 +47,7 @@ This store defines `client` and `connection` properties, which the Knex Trailpac
 
 Each Model defines its backing store. To illustrate how multiple stores can be used, we'll store Users in the Postgres database, and we'll store associated Roles in the SQLite3 database.
 
-```es6
+```js
 // api/models/User.js
 
 module.exports = class User extends Model {
@@ -67,7 +67,7 @@ module.exports = class User extends Model {
 }
 ```
 
-```es6
+```js
 // api/models/Role.js
 
 module.exports = class Role extends Model {
@@ -106,7 +106,7 @@ module.exports = class Role extends Model {
 
 ## Services
 
-```es6
+```js
 // api/services/PermissionService.js
 
 module.exports = class PermissionService extends Service {

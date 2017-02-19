@@ -40,7 +40,7 @@ npm install trailpack-knex sqlite3 --save
 
 Add it to the trailpack list:
 
-```es6
+```js
 // config/main.js
 
 module.exports = {
@@ -56,7 +56,7 @@ module.exports = {
 
 And configure a store:
 
-```es6
+```js
 // config/stores.js
 
 module.exports = {
@@ -79,7 +79,7 @@ First, we'll use the Trails generator to create a new Model called `User`. Both 
 
 #### `yo trails:model User`
 
-```es6
+```js
 // api/models/User.js
 
 const UserResolver = require('../resolvers/UserResolver')
@@ -105,7 +105,7 @@ module.exports = class User extends Model {
 
 For each Model, we specify the store that it belongs to. We created a store called `devdb` above, so we'll use that.
 
-```es6
+```js
 // api/models/User.js
 
 	static config () {
@@ -123,7 +123,7 @@ The Knex Trailpack passes in a [`table`](http://knexjs.org/#Schema-table) argume
 - `id`: integer, unique, auto increment, primary key
 - `email`: string, unique, add index for searching
 
-```es6
+```js
 // api/models/User.js
 
   static schema (table) {
@@ -138,7 +138,7 @@ The Knex Trailpack passes in a [`table`](http://knexjs.org/#Schema-table) argume
 
 Create a new Model, and persist it into our datastore.
 
-```es6
+```js
 // api/services/UserService.js
 
 module.exports = class UserService extends Service {

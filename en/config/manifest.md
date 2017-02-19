@@ -2,7 +2,7 @@
 
 A manifest of the available configuration files. Configuration files added/created should be required in this file. This file should not be used to define any configuration values.
 
-```es6
+```js
 // config/index.js
 
 exports.main = require('./main')
@@ -15,13 +15,13 @@ exports.routes = require('./routes')
 
 Each environment-specific configuration should contain its own manifest file.
 
-```es6
+```js
 // config/env/index.js
 
 exports.staging = require('./staging')
 ```
 
-```es6
+```js
 // config/env/staging/index.js
 
 exports.main = require('./main')

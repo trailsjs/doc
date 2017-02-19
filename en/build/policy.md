@@ -14,7 +14,7 @@ Similar to Controllers and Services, we'll create a new Policy using the Trails 
 
 #### `yo trails:policy TimePolicy`
 
-```es6
+```js
 // api/policies/TimePolicy.js
 
 const moment = require('moment')
@@ -48,7 +48,7 @@ module.exports = class TimePolicy extends Policy {
 
 Let's say we want this Policy to apply to `VersionController.getLatest` that we built in the [previous section](service.md). We configure this Policy as a *precondition* of the `VersionController.getLatest` route:
 
-```es6
+```js
 // config/routes.js
 
 module.exports = [
@@ -73,7 +73,7 @@ Now, requests to `/version/{packageName}` will first be validated by `TimePolicy
 
 - Request: `GET /version/node`
 - Response: 
-```es6on
+```json
 {
   "node": "v7.5.0"
 }
@@ -83,7 +83,7 @@ Now, requests to `/version/{packageName}` will first be validated by `TimePolicy
 
 - Request: `GET /version/node`
 - Response: 
-```es6on
+```json
 {
   "statusCode": 500,
   "error": "We are currently closed.",

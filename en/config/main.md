@@ -2,7 +2,7 @@
 
 Declare the Trailpacks to load, set filesystem paths, and other basic application settings.
 
-```es6
+```js
 // config/main.js
 
 module.exports = {

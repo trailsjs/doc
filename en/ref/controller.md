@@ -1,4 +1,4 @@
-#### [Docs](../../) / [API Reference](./) / Controller
+#### [Docs](../) / [API Reference](./) / Controller
 
 ##### *If you're looking for the walkthrough guide on Controllers, see: [2.1 Controller](../build/controller.md)*
 

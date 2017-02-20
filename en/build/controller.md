@@ -1,4 +1,4 @@
-#### [Docs](../../) / [Build](./) / Controller
+#### [Docs](../) / [Build](./) / Controller
 
 # 2.1 Controller
 

@@ -1,4 +1,4 @@
-#### [Docs](../../) / [Configuration](./) / web.js
+#### [Docs](../) / [Configuration](./) / web.js
 
 # 3.7. `web.js`
 

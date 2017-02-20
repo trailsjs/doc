@@ -1,4 +1,4 @@
-#### [Docs](../../) / Build
+#### [Docs](../) / Build
 
 ##### *If you haven't yet created a Trails Application, [**Start**](../start.md) there first.*
 

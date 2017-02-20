@@ -1,4 +1,4 @@
-#### [Docs](../../) / Configuration
+#### [Docs](../) / Configuration
 
 # 3. Configuration
 

@@ -1,4 +1,4 @@
-#### [Docs](../../) / [Build](./) / Resolver
+#### [Docs](../) / [Build](./) / Resolver
 
 # 2.5 Resolver
 

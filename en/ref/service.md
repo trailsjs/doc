@@ -1,4 +1,4 @@
-#### [Docs](../../) / [API Reference](./) / Service
+#### [Docs](../) / [API Reference](./) / Service
 
 ##### *If you're looking for the walkthrough guide on Services, see: [2.2 Service](../build/service.md)*
 

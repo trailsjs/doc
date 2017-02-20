@@ -1,4 +1,4 @@
-#### [Docs](../../) / [About Trails](./) / What is Trails?  
+#### [Docs](../) / [About Trails](./) / What is Trails?  
 
 # 10.1. What is Trails?
 

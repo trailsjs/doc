@@ -1,4 +1,4 @@
-#### [Docs](../../) / [API Reference](./) / Resolver
+#### [Docs](../) / [API Reference](./) / Resolver
 
 ##### *If you're looking for the walkthrough guide on Resolvers, see: [2.5 Resolver](../build/resolver.md)*
 

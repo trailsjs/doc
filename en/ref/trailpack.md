@@ -1,4 +1,4 @@
-#### [Docs](../../) / [API Reference](./) / Trailpack
+#### [Docs](../) / [API Reference](./) / Trailpack
 
 # 9.2 Trailpack API
 

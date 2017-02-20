@@ -1,4 +1,4 @@
-#### [Docs](../../) / [API Reference](./) / Trails
+#### [Docs](../) / [API Reference](./) / Trails
 
 # 9.1 Trails API
 

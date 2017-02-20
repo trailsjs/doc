@@ -1,4 +1,4 @@
-#### [Docs](../../) / About Trails
+#### [Docs](../) / About Trails
 
 # 10. About Trails
 

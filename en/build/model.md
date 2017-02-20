@@ -1,6 +1,6 @@
 #### [Docs](../) / [Build](./) / Model
 
-# 2.4 Model
+# 2.4. Model
 
 **Models** help organize your data into logical domain objects. Typically, one Model will represent one database table, by defining the schema for how your application data is represented in the database. This concept of Models is often called a Data Transfer Object, or [DTO](https://en.wikipedia.org/wiki/Data_transfer_object).
 

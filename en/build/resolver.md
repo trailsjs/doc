@@ -1,6 +1,6 @@
 #### [Docs](../) / [Build](./) / Resolver
 
-# 2.5 Resolver
+# 2.5. Resolver
 
 **Resolvers** are to Models as Services are to Controllers. They inform the application how the Model layer interacts with the persistence layer (database). More spefically, they implement the queries that the application is allowed to perform on the Model. The concept of Resolvers is often called a Data Access Object, or [DAO](https://en.wikipedia.org/wiki/Data_access_object).
 

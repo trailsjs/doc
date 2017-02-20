@@ -1,6 +1,6 @@
 #### [Docs](../) / [Build](./) / Policy
 
-# 2.3 Policy
+# 2.3. Policy
 
 Policies decide whether a request should invoke the defined Controller at all. They are useful to separate validation logic from request-handling logic. For example, they might perform validation on the request parameters, check for a valid User session, or rate-limit a particular client.
 

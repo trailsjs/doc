@@ -1,6 +1,6 @@
 #### [Docs](../) / [Build](./) / Controller
 
-# 2.1 Controller
+# 2.1. Controller
 
 This guide walks through creating a new Controller, implementing handlers, and configuring routes. We'll cover how to build endpoints for both [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) and [GraphQL](http://www.graphql.com/).
 

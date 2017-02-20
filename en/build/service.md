@@ -1,6 +1,6 @@
 #### [Docs](../) / [Build](./) / Service
 
-# 2.2 Service
+# 2.2. Service
 
 Services are invoked by Controller handlers to perform more complex business logic not directly related to client communication.
 

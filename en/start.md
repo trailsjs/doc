@@ -1,4 +1,4 @@
-#### [Docs](../) / Start
+#### [Docs](./) / Start
 
 # Start
 

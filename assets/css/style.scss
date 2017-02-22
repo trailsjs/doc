@@ -12,11 +12,9 @@ $light-brown: #BBBAB7;
 $very-light-brown: #E0E0DF;
 $font-color: #808080;
 
-section .main-content {
+section.main-content {
   color: $font-color;
-}
 
-section .main-content {
   h1, h2, h3 {
     color: $green !important;
   }

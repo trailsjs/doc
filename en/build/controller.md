@@ -134,7 +134,7 @@ The Controller method to route the request to. In the Route configuration above,
 
 Now that you've finished implementing and configuring your first Controller, let's try it out! New Trails applications includes a [REPL](https://github.com/trailsjs/trailpack-repl) that let you interact with the application while it's running. After you run `npm start`, you should see something like this:
 
-![Trails REPL](trails-helloworld-repl.png)
+![Trails REPL](http://cdn.trailsjs.io/doc/en/build/trails-helloworld-repl.png)
 
 Now, you can test out your new Controller right in the Trails console:
 

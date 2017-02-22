@@ -12,52 +12,52 @@ $light-brown: #BBBAB7;
 $very-light-brown: #E0E0DF;
 $font-color: #808080;
 
-section.main-content {
+section .main-content {
   color: $font-color;
 }
 
 section .main-content {
-  * h1, * h2, * h3 {
+  h1, h2, h3 {
     color: $green !important;
   }
-  * h4 {
+  h4 {
     color: $brown !important;
   }
-  * h5 {
+  h5 {
     color: $font-color !important;
   }
 
-  * a {
+  a {
     color: $blue !important;
   }
 
-  * table {
+  table {
     margin-top: 0.5em !important;
     font-size: 0.9em !important;
   }
 
-  * pre {
+  pre {
     background-color: $brown !important;
   }
-  * code {
+  code {
     font-size: 0.9em !important;
     background-color: $very-light-brown !important;
     color: $brown !important;
     font-family: "Monaco", "Consolas", monospace !important;
   }
 
-  * pre > code {
+  pre > code {
     font-size: 1.05em !important;
     background-color: $brown !important;
     color: $light-brown !important;
   }
 
-  * .err {
+  .err {
     color: $green !important;
     background-color: $brown !important;
   }
 
-  * .language-json * .err {
+  .language-json .err {
     color: $medium-brown !important;
   }
 

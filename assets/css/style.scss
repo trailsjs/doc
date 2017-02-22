@@ -12,87 +12,86 @@ $light-brown: #BBBAB7;
 $very-light-brown: #E0E0DF;
 $font-color: #808080;
 
-body {
+section.main-content {
   color: $font-color;
 }
 
-h1, h2, h3 {
-  color: $green !important;
-}
-h4 {
-  color: $brown !important;
-}
-h5 {
-  color: $font-color !important;
-}
+section .main-content {
+  * h1, * h2, * h3 {
+    color: $green !important;
+  }
+  * h4 {
+    color: $brown !important;
+  }
+  * h5 {
+    color: $font-color !important;
+  }
 
-a {
-  color: $blue !important;
-}
+  * a {
+    color: $blue !important;
+  }
 
-table {
-  margin-top: 0.5em !important;
-  font-size: 0.9em !important;
-}
+  * table {
+    margin-top: 0.5em !important;
+    font-size: 0.9em !important;
+  }
 
-/**
- * code style
- */
-pre {
-  background-color: $brown !important;
-}
-code {
-  font-size: 0.9em !important;
-  background-color: $very-light-brown !important;
-  color: $brown !important;
-  font-family: "Monaco", "Consolas", monospace !important;
-}
+  * pre {
+    background-color: $brown !important;
+  }
+  * code {
+    font-size: 0.9em !important;
+    background-color: $very-light-brown !important;
+    color: $brown !important;
+    font-family: "Monaco", "Consolas", monospace !important;
+  }
 
-pre > code {
-  font-size: 1.05em !important;
-  background-color: $brown !important;
-  color: $light-brown !important;
-}
+  * pre > code {
+    font-size: 1.05em !important;
+    background-color: $brown !important;
+    color: $light-brown !important;
+  }
 
-.err {
-  color: $green !important;
-  background-color: $brown !important;
-}
+  * .err {
+    color: $green !important;
+    background-color: $brown !important;
+  }
 
-.language-json * .err {
-  color: $medium-brown !important;
-}
+  * .language-json * .err {
+    color: $medium-brown !important;
+  }
 
-// normal stuff
-.nx, .nl {
-  color: $light-brown !important;
-}
+  // normal stuff
+  .nx, .nl {
+    color: $light-brown !important;
+  }
 
-// keywords
-.k, .kr, .kc {
-  color: $green !important;
-}
+  // keywords
+  .k, .kr, .kc {
+    color: $green !important;
+  }
 
-.nb {
-  color: $green !important;
-}
+  .nb {
+    color: $green !important;
+  }
 
-// comments
-.cm, .c1 {
-  color: $medium-brown !important;
-}
+  // comments
+  .cm, .c1 {
+    color: $medium-brown !important;
+  }
 
-// punctuation
-.p, .o {
-  color: $very-light-brown !important;
-}
+  // punctuation
+  .p, .o {
+    color: $very-light-brown !important;
+  }
 
-// strings
-.s1, .s2, .mi {
-  color: $green !important;
-}
+  // strings
+  .s1, .s2, .mi {
+    color: $green !important;
+  }
 
-// keys
-.nt, .na {
-  color: $light-blue !important;
+  // keys
+  .nt, .na {
+    color: $light-blue !important;
+  }
 }

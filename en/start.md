@@ -1,4 +1,4 @@
-#### [Docs](./) / Start
+#### [Docs](/doc/en) / Start
 
 # <a href="#start">Start</a>
 
@@ -112,4 +112,4 @@ A bunch of new files will be created, and you'll be able to fire up your new Tra
 └───────────────────────────────────────────┘
 ```
 
-## Next: [Build your App](./build)
+## Next: [Build your App](/doc/en/build)

@@ -16,8 +16,12 @@ section.main-content {
   color: $font-color;
   font-weight: 300;
 
-  ul, ol {
-    font-size: 1.0em;
+  ol li {
+    font-size: 1.25em;
+  }
+
+  ol li ul {
+    font-size: 1.1em;
   }
 
   h1, h2, h3 {

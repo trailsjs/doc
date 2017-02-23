@@ -15,7 +15,10 @@ $font-color: #808080;
 section.main-content {
   color: $font-color;
   font-weight: 300;
-  font-size: 1.0em;
+
+  ul, ol {
+    font-size: 1.0em;
+  }
 
   h1, h2, h3 {
     color: $green !important;

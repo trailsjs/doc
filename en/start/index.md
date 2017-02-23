@@ -1,18 +1,18 @@
 #### [Docs](./) / Start
 
-# <a href="#start" class="heading-anchor">Start</a>
+# <a href="#start">Start</a>
 
 Trails is a framework, and is downloadable as a module from [**npm**](https://www.npmjs.com/package/trails). This guide will walk through how to set up a new Trails application using the Trails installer.
 
 If you haven't yet installed Node, download it from [**nodejs.org**](https://nodejs.org/en/) and follow the instructions there.
 
-## Install Trails
+## <a href="#install-trails">Install Trails</a>
 
 Trails includes an interactive installer that guides us through the process of setting up a new app. First, download the installer using npm:
 
 #### `npm install -g yo generator-trails`
 
-## Create a New App
+## <a href="#create-a-new-app">Create a New App</a>
 
 Now, create a new directory for your application and navigate to that directory in your console. For example:
 
@@ -27,7 +27,7 @@ In your console, start the interactive installer by running:
 
 ##### *If you're in Windows you may have to add the npm install directory to the `PATH` environment variable. e.g. `C:\Users\username\AppData\Roaming\npm`. See also: [http://stackoverflow.com/a/32159233/291180](http://stackoverflow.com/a/32159233/291180).*
 
-### 1. Choose web Server
+### <a href="#1-choose-web-server">1. Choose web Server</a>
 
 Default: `hapi`.
 
@@ -43,7 +43,7 @@ Checking for updates...
   other
 ```
 
-### 2. Choose ORM
+### <a href="#2-choose-orm">2. Choose ORM</a>
 
 Default: `waterline`
 
@@ -61,7 +61,7 @@ An ORM (object-relational mapping) can be included with your new Trails applicat
 ```
 
 
-### 3. Use Footprints?
+### <a href="#3-use-footprints">3. Use Footprints?</a>
 
 Default: `yes`
 
@@ -71,7 +71,7 @@ Trails can automatically generate RESTful endpoints based on the Models you defi
 ? Do you want to use Footprints (automatic REST API from models) ? (Y/n)
 ```
 
-### 4. Module Information
+### <a href="#4-module-information">4. Module Information</a>
 
 Specify the name, description, and other attributes of your new module. These values will be set in the module's `package.json`.
 
@@ -85,7 +85,7 @@ Specify the name, description, and other attributes of your new module. These va
 ? Package keywords (comma to split) trails, quickstart, documentation
 ```
 
-### 5. License
+### <a href="#5-license">5. License</a>
 
 Default: `MIT`
 
@@ -100,7 +100,7 @@ Default: `MIT`
   No License (Copyrighted)
 ```
 
-### 6. Done!
+### <a href="#6-done">6. Done!</a>
 
 A bunch of new files will be created, and you'll be able to fire up your new Trails application and start building features.
 

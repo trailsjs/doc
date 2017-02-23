@@ -1,9 +1,9 @@
 # Table of Contents
 
-If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [**Start**](start.md)!
+If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [**Start**](start)!
 
-1. [Start](start.md)
-2. [Build](build/)
+1. [Start](start)
+2. [Build](build)
   - [Controller](build/controller.md)
   - [Service](build/service.md)
   - [Policy](build/policy.md)

@@ -2,7 +2,10 @@
 
 If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [**Start**](/doc/en//start)!
 
+<span class="toc">
+
 1. [Start](/start)
+
 2. [Build](/doc/en/build/)
   - [Controller](/doc/en/build/controller)
   - [Service](/doc/en/build/service)
@@ -52,5 +55,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Release Schedule](/doc/en/about/schedule)
   - [Contributing](/doc/en/about/contribute)
 11. [Support](/support)
+
+</span>
 
 

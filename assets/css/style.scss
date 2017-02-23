@@ -21,80 +21,80 @@ section.main-content {
   }
 
   h1, h2, h3 {
-    color: $green !important;
+    color: $green;
   }
   h4 {
-    color: $brown !important;
+    color: $brown;
   }
   h5 {
-    color: $font-color !important;
+    color: $font-color;
   }
 
   a {
-    color: $blue !important;
+    color: $blue;
   }
 
   table {
-    margin-top: 0.5em !important;
-    font-size: 0.9em !important;
+    margin-top: 0.5em;
+    font-size: 0.9em;
   }
 
   pre {
-    background-color: $brown !important;
+    background-color: $brown;
   }
   code {
-    font-size: 0.9em !important;
-    background-color: $very-light-brown !important;
-    color: $brown !important;
-    font-family: "Monaco", "Consolas", monospace !important;
+    font-size: 0.9em;
+    background-color: $very-light-brown;
+    color: $brown;
+    font-family: "Monaco", "Consolas", monospace;
   }
 
   pre > code {
-    font-size: 1.05em !important;
-    background-color: $brown !important;
-    color: $light-brown !important;
+    font-size: 1.05em;
+    background-color: $brown;
+    color: $light-brown;
   }
 
   .err {
-    color: $green !important;
-    background-color: $brown !important;
+    color: $green;
+    background-color: $brown;
   }
 
   .language-json .err {
-    color: $medium-brown !important;
+    color: $medium-brown;
   }
 
   // normal stuff
   .nx, .nl {
-    color: $light-brown !important;
+    color: $light-brown;
   }
 
   // keywords
   .k, .kr, .kc {
-    color: $green !important;
+    color: $green;
   }
 
   .nb {
-    color: $green !important;
+    color: $green;
   }
 
   // comments
   .cm, .c1 {
-    color: $medium-brown !important;
+    color: $medium-brown;
   }
 
   // punctuation
   .p, .o {
-    color: $very-light-brown !important;
+    color: $very-light-brown;
   }
 
   // strings
   .s1, .s2, .mi {
-    color: $green !important;
+    color: $green;
   }
 
   // keys
   .nt, .na {
-    color: $light-blue !important;
+    color: $light-blue;
   }
 }

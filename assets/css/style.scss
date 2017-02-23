@@ -15,13 +15,15 @@ $font-color: #808080;
 section.main-content {
   color: $font-color;
   font-weight: 300;
+  width: 100%;
+  float: none;
 
-  ol li {
+  ol li p a {
     font-size: 1.25em;
   }
 
   ol li ul {
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
 
   h1, h2, h3 {

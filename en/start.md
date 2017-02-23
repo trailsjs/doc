@@ -1,6 +1,6 @@
 #### [Docs](./) / Start
 
-# Start
+# Start (#start)
 
 Trails is a framework, and is downloadable as a module from [**npm**](https://www.npmjs.com/package/trails). This guide will walk through how to set up a new Trails application using the Trails installer.
 

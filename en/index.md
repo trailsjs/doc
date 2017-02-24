@@ -10,6 +10,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Policy](/doc/en/build/policy)
   - [Model](/doc/en/build/model)
   - [Resolver](/doc/en/build/resolver)
+
 3. [Configure](/doc/en/config/)
   - [index](/doc/en/config/manifest)
   - [main](/doc/en/config/main)
@@ -18,15 +19,19 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [stores](/doc/en/config/stores)
   - [i18n](/doc/en/config/i18n)
   - [web](/doc/en/config/web)
+
 4. [Test](/doc/en/test/)
   - [Unit Testing](/doc/en/test/unit)
   - [Integration Testing](/doc/en/test/integration)
+  
 5. [Debug](/doc/en/debug/)
+
 6. [Deploy](/doc/en/deploy/)
   - [Requirements](/doc/en/deploy/requirements)
   - [Providers](/doc/en/deploy/providers)
   - [Security](/doc/en/deploy/security)
   - [Scaling](/doc/en/deploy/scaling)
+
 7. [Extend](/doc/en/extend/)
   - [Trailpacks](/doc/en/extend/trailpack)
   - [Re-usable Services](/doc/en/extend/service)
@@ -36,9 +41,11 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [User Management](/doc/en/extend/users/)
     - [Authentication](/doc/en/extend/users/auth)
     - [Permissions](/doc/en/extend/users/permissions)
+
 8. [Upgrade](/doc/en/upgrade/)
   - [Application](/doc/en/upgrade/app)
   - [Trailpack](/doc/en/upgrade/trailpack)
+
 9. [API Reference](/doc/en/ref/)
   - [Trails](/doc/en/ref/trails)
   - [Trailpack](/doc/en/ref/trailpack)
@@ -47,9 +54,11 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Model](/doc/en/ref/model)
   - [Resolver](/doc/en/ref/resolver)
   - [Policy](/doc/en/ref/policy)
+
 10. [About Trails](/doc/en/about/)
   - [What is Trails?](/doc/en/about/trails)
   - [Design Theory](/doc/en/about/theory)
   - [Release Schedule](/doc/en/about/schedule)
   - [Contributing](/doc/en/about/contribute)
+
 11. [Support](/support)

@@ -54,7 +54,7 @@ describe('Company', () => {
 })
 ```
 
-### <a href="create-a-model-unit-test">Create a Model Unit Test</a>
+### <a href="#create-a-model-unit-test">Create a Model Unit Test</a>
 
 Let's test the `formatCIK` method to ensure it works as intended.
 
@@ -119,7 +119,7 @@ describe('ReportService', () => {
 })
 ```
 
-### <a href="create-a-service-unit-test">Create a Service Unit Test</a>
+### <a href="#create-a-service-unit-test">Create a Service Unit Test</a>
 
 For reference, here is an example of the feed we want to parse: [RSS Feed](https://gist.github.com/tjwebb/619ffedec259f4d2afe6c9038b93213a#file-sec-rss-feed-xml). We'll create a *fixture* directory called `testfeeds/` and store this, and other test feed data, in that directory.
 
@@ -180,7 +180,7 @@ describe('ReportPolicy', () => {
 })
 ```
 
-### <a href="create-a-policy-unit-test">Create a Policy Unit Test</a>
+### <a href="#create-a-policy-unit-test">Create a Policy Unit Test</a>
 
 ```js
 // test/unit/policies/ReportPolicy.test.js

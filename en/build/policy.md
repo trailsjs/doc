@@ -4,7 +4,7 @@
 
 Policies decide whether a request should invoke the defined Controller at all. They are useful to separate validation logic from request-handling logic. For example, they might perform validation on the request parameters, check for a valid User session, or rate-limit a particular client.
 
-## Example 1: Block Certain Parameters
+## Example 1: Disallow Certain Companies
 
 Building on the Annual Report service from our earlier guides, we'll disallow requests from certain known IP addresses.
 
@@ -12,7 +12,7 @@ As a simple example, let's say your web service should only be available during 
 
 Similar to Controllers and Services, we'll create a new Policy using the Trails generator:
 
-### Create Policy
+### <a href="#create-policy">Create Policy</a>
 
 #### `yo trails:policy ReportPolicy`
 
@@ -41,7 +41,7 @@ module.exports = class ReportPolicy extends Policy {
 }
 ```
 
-### Configure Policy
+### <a href="#configure-policy">Configure Policy</a>
 
 Let's say we want this Policy to apply to `ReportController.getLatest` that we built in the [previous section](service.md). We configure this Policy as a *precondition* of the `ReportController.getLatest` route:
 
@@ -64,7 +64,7 @@ module.exports = [
 
 Now, requests to `/report/{cik}` will first be validated by `ReportPolicy`.
 
-### Examples
+### <a href="#examples">Examples</a>
 
 - Request: `GET /report/0001467858` (General Motors)
 - Response: 

@@ -11,7 +11,7 @@ Let's build a simple web service that returns the annual report of a given compa
 #### `yo trails:controller ReportController`
 #### `yo trails:service ReportService`
 
-### <a href="#implement-the-controller">Implement the Controller</a>
+### <a href="#implement-reportcontroller">Implement `ReportController`</a>
 
 ```js
 // api/controller/ReportController.js

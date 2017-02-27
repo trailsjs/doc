@@ -16,6 +16,8 @@ Let's build a simple web service that returns the annual report of a given compa
 ```js
 // api/controller/ReportController.js
 
+const boom = require('boom')
+
 module.exports = class ReportController extends Controller {
 
   /**
@@ -54,7 +56,7 @@ module.exports = class ReportService extends Service {
    */
   getLatest (cik) {
     return this.getEdgarListings()
-      .then(list => list.sort(f => (0 - f.filingDate.valueOf()))
+      .then(list => list.sort(f => (0 - f.filingDate.valueOf())))
       .then(([ filing ]) => filing)
   }
 

@@ -4,14 +4,14 @@
 
 Services are invoked by Controller handlers to perform more complex business logic not directly related to client communication.
 
-## Query an External Service
+## <a href="#sec-annual-reports">SEC Annual Reports</a>
 
 Let's build a simple web service that returns the annual report of a given company as a JSON object. As in the previous section, we'll need a Controller to handle the request/response cycle, but here we'll additionally create a Service that the Controller will invoke to perform some more customized business logic.
 
 #### `yo trails:controller ReportController`
 #### `yo trails:service ReportService`
 
-### Implement the Controller
+### <a href="#implement-the-controller">Implement the Controller</a>
 
 ```js
 // api/controller/ReportController.js
@@ -79,7 +79,7 @@ module.exports = class ReportService extends Service {
 }
 ```
 
-### Configure the Route
+### <a href="#configure-the-route">Configure the Route</a>
 
 ```js
 // config/routes.js
@@ -92,7 +92,7 @@ module.exports = [
 ]
 ```
 
-### Example Request/Reponse
+### <a href="#example-request-and-response">Example Request and Reponse</a>
 
 - Request: `GET /report/0001467858` ([General Motors](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001467858&owner=exclude&count=40))
 - Response:

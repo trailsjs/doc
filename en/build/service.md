@@ -101,7 +101,7 @@ module.exports = class ReportService extends Service {
    * @param cik
    */
   getLatest (cik) {
-    return this.getEdgarListings()
+    return this.getEdgarListings(cik)
       .then(list => list.sort(f => (0 - f.filingDate.valueOf())))
       .then(([ filing ]) => filing)
   }
@@ -122,7 +122,8 @@ module.exports = class ReportService extends Service {
    * Parse the RSS feed and convert to JSON
    */
   parseFeed (feed) {
-    // ...
+    // Lets return something
+    return feed.substring(2, 5)
   }
 }
 ```
@@ -134,7 +135,7 @@ module.exports = class ReportService extends Service {
 module.exports = [
   {
     method: [ 'GET' ],
-    path: '/report/{cik}'
+    path: '/report/{cik}',
     handler: 'ReportController.getLatest'
   }
 ]

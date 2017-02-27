@@ -5,83 +5,9 @@
 Unit tests verify the functionality of individual methods and components that don't require interaction with external resources (e.g., databases. In this section, similar to previous sections, we'll illustrate testing by building on the use case of a web service that provides the annual reports for large companies to subscribers.
 
 - `models/Company`
+- `resolvers/CompanyResolver`
 - `services/ReportService`
 - `policies/ReportPolicy`
-
-## <a href="#testing-models">Testing Models</a>
-
-`yo trails:model Company` will generate, along with the main Model class, a unit test suite.
-
-### <a href="#model-class">Model Class</a>
-
-```js
-// api/models/Company.js
-
-module.exports = class Company extends Model {
-  /**
-   * Fields:
-   *  - name (string)
-   *  - cik (string; central index key)
-   *  - latestReport (json)
-   */
-
-  /**
-   * The CIK must always be exactly ten digits; left-pad with zeroes
-   * if less than ten digits.
-   * @see https://en.wikipedia.org/wiki/Central_Index_Key
-   */
-  static formatCIK (cik) {
-    return leftPad(cik, (10 - cik.length), '0')
-  }
-}
-```
-
-### <a href="#model-test-suite">Model Test Suite</a>
-
-```js
-// test/unit/models/Company.test.js
-
-const assert = require('assert')
-
-describe('Company', () => {
-  let instance, Company
-  before(() => {
-    assert(global.app.models.Company)
-
-    Company = global.app.models.Company
-    instance = new Company()
-  })
-})
-```
-
-### <a href="#create-a-model-unit-test">Create a Model Unit Test</a>
-
-Let's test the `formatCIK` method to ensure it works as intended.
-
-```js
-// test/unit/models/Company.test.js
-
-const assert = require('assert')
-
-describe('Company', () => {
-  // ...
-  describe('#formatCIK', () => {
-    it('should always return a ten-digit string', () => {
-      assert.equal(Company.formatCIK('928465').length, 10)
-      assert.equal(Company.formatCIK('0928465').length, 10)
-      assert.equal(Company.formatCIK('0000928465').length, 10)
-    })
-  })
-})
-```
-
-### Run the Test!
-
-Just execute `npm test` in your console, and you'll see an output like this:
-
-```
-  1 passing (2ms)
-```
 
 ## <a href="#testing-services">Testing Services</a>
 
@@ -204,5 +130,102 @@ describe('ReportPolicy', () => {
 })
 ```
 
+## <a href="#testing-models">Testing Models</a>
+
+`yo trails:model Company` will generate, along with the specified Model and Resolver classes, unit test suites:
+
+- `test/unit/models/Company.test.js`
+- `test/unit/resolvers/CompanyResolver.test.js`
+
+### <a href="#model-class">Model Class</a>
+
+The `Company` Model is summarized below in pseudo-code.See [2.4 Model](../build/model#define-the-schema) for the full Model class definition.
+
+```js
+// api/models/Company.js
+
+module.exports = class Company extends Model {
+  /**
+   * Fields:
+   *  - name (string)
+   *  - description (string)
+   *  - cik (string; central index key)
+   *  - city (string)
+   *  - state (string)
+   *  - street (string)
+   *  - zip (string)
+   */
+}
+```
+
+### <a href="#model-test-suite">Model Test Suite</a>
+
+```js
+// test/unit/models/Company.test.js
+
+const assert = require('assert')
+
+describe('Company', () => {
+  let instance, Company
+  before(() => {
+    assert(global.app.models.Company)
+
+    Company = global.app.models.Company
+    instance = new Company()
+  })
+})
+```
+
+### <a href="#create-a-model-unit-test">Create a Model Unit Test</a>
+
+Let's test the `formatCIK` method to ensure it works as intended.
+
+```js
+// test/unit/models/Company.test.js
+
+const assert = require('assert')
+
+describe('Company', () => {
+  // ...
+  describe('#formatCIK', () => {
+
+    it('should always return a ten-digit string', () => {
+      assert.equal(Company.formatCIK('928465').length, 10)
+      assert.equal(Company.formatCIK('0928465').length, 10)
+      assert.equal(Company.formatCIK('0000928465').length, 10)
+    })
+
+    it('should format cik when setting values via the constructor', () => {
+      const company = new Company({ cik: '928465' })
+      assert.equal(company.cik, '0000928465')
+    })
+
+  })
+})
+```
+
+### Run the Test!
+
+Just execute `npm test` in your console, and you'll see an output like this:
+
+```
+  2 passing (5ms)
+```
+
+## <a href="#testing-resolvers">Testing Resolvers</a>
+
+```js
+// api/resolvers/CompanyResolver.js
+
+module.exports = class CompanyResolver extends KnexResolver {
+  save () {
+    this.store.insert(
+  }
+}
+```
+
+### <a href="#resolver-class">Resolver Class</a>
+### <a href="#resolver-test-suite">Resolver Test Suite</a>
+### <a href="#create-a-resolver-unit-test">Create a Resolver Unit Test</a>
 
 ### Next: [Integration Testing](integration.md)

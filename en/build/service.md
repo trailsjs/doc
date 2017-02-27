@@ -42,6 +42,52 @@ module.exports = class ReportController extends Controller {
 
 `ReportService` will query the [SEC EDGAR](https://www.sec.gov/edgar/searchedgar/cik.htm) service. Their web service returns an RSS feed, which we'll parse into JSON. `getLatest(cik)` will determine the most recent entry in the feed, and return it. Separating out this business logic from the request-handling duties of the Controller is a good practice for separating concerns and organizing code.
 
+For reference, here's a snippet of the RSS feed for General Motors:
+
+```xml
+<company-info>
+	<addresses>
+		<address type="business">
+			<city>DETROIT</city>
+			<phone>313.556.5000</phone>
+			<state>MI</state>
+			<street1>300 RENAISSANCE CENTER</street1>
+			<zip>48265-3000</zip>
+		</address>
+	</addresses>
+	<assigned-sic>3711</assigned-sic>
+	<assigned-sic-desc>MOTOR VEHICLES &amp;amp; PASSENGER CAR BODIES</assigned-sic-desc>
+	<cik>0001467858</cik>
+	<conformed-name>General Motors Co</conformed-name>
+	<fiscal-year-end>1231</fiscal-year-end>
+	<state-location>MI</state-location>
+</company-info>
+```
+
+To store this in our database, we'll want to parse it into JSON, so that it looks something like this:
+
+```json
+{
+  "companyInfo": {
+    "addresses": [
+      {
+        "type": "business",
+        "city": "DETROIT",
+        "phone": "313.556.5000",
+        "state": "MI",
+        "street1": "300 RENAISSANCE CENTER",
+        "zip": "48265-3000"
+      }
+    ],
+    "assignedSicDesc": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+    "cik": "0001467858",
+    "conformedName": "General Motors Co",
+    "fiscalYearEnd": "1231"
+  }
+}
+```
+
+
 ```js
 // api/services/ReportService.js
 
@@ -103,7 +149,7 @@ module.exports = [
     "size": "23 MB",
     "filingDate": "2017-02-07",
     "company": {
-      "name": "General Motors Co",
+      "conformedName": "General Motors Co",
       "state": "MI",
       // ...
     },
@@ -118,7 +164,7 @@ module.exports = [
     "size": "7 MB",
     "filingDate": "2016-11-08",
     "company": {
-      "name": "AMCON DISTRIBUTING CO",
+      "conformedName": "AMCON DISTRIBUTING CO",
       "state": "NE",
       // ...
     },

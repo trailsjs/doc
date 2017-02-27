@@ -15,10 +15,8 @@ Unit tests verify the functionality of individual methods and components that ty
 - Policies
 - Services
 - Models
+- Resolvers
 
 ## 4.3. [Integration Testing](integration.md)
 
-Integration tests verify that multiple components work together properly. Whereas a Unit Test will focus on an indvidual method, an integration test will verify the result from a complex series of events. For example, an integration test will verify the web server will return the correct response given a particular request.
-
-- Controllers
-- Resolvers
+Integration tests verify that multiple components work together properly. Whereas a Unit Test will focus on an indvidual method, an integration test will verify the result from a complex series of events. In Trails, integration tests will verify the web server will return the correct response given a particular request.

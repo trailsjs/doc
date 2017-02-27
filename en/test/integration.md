@@ -2,11 +2,10 @@
 
 # 4.3. Integration Testing
 
-Integration tests verify that multiple components work together properly. Whereas a Unit Test will focus on an indvidual method, an integration test will verify the result from a complex series of events. For example, an integration test will verify the web server will return the correct response given a particular request.
+Integration tests verify that multiple components work together properly. Whereas a Unit Test will focus on an indvidual method, an integration test will verify the result from a complex series of events. In Trails, integration tests will verify the web server will return the correct response given a particular request.
 
-As in previous sections, this section continues the example of the Annual Report web service.
+As in previous sections, this section continues the example of the Annual Report web service. Since integration tests verify response for a particular request, integration test suites in Trails are organized by Controller.
 
-- `resolvers/Company`
 - `controllers/ReportController`
 
 ## <a href="#testing-controllers">Testing Controllers</a>
@@ -32,7 +31,7 @@ For reference, the full implementation of this Controller can be found in [2.2 S
 ### <a href="#controller-test-suite">Controller Test Suite</a>
 
 ```js
-// test/integration/controllers/ReportController.test.js
+// test/integration/ReportController.test.js
 
 const assert = require('assert')
 
@@ -84,8 +83,3 @@ describe('ReportController', () => {
 })
 ```
 
-## <a href="#testing-resolvers">Testing Resolvers</a>
-
-### <a href="#resolver-class">Resolver Class</a>
-### <a href="#resolver-test-suite">Resolver Test Suite</a>
-### <a href="#create-a-resolver-unit-test">Create a Resolver Unit Test</a>

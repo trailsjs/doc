@@ -75,23 +75,23 @@ module.exports = {
 
 ## Create a Model
 
-First, we'll use the Trails generator to create a new Model called `User`. Both a Model and a Resolver will be created. The Resolver will be reviewed in section
+First, we'll use the Trails generator to create a new Model called `Company`. Both a Model and a Resolver will be created. The Resolver guide is in the next section: [2.5 Resolver](./resolver)
 
-#### `yo trails:model User`
+#### `yo trails:model Company`
 
 ```js
-// api/models/User.js
+// api/models/Company.js
 
-const UserResolver = require('../resolvers/UserResolver')
+const CompanyResolver = require('../resolvers/CompanyResolver')
 
 /**
- * @module User
- * @description A User of the application
+ * @module Company
+ * @description A Company
  */
-module.exports = class User extends Model {
+module.exports = class Company extends Model {
   static config () {
     return {
-      resolver: UserResolver
+      resolver: CompanyResolver
     }
   }
 
@@ -106,31 +106,55 @@ module.exports = class User extends Model {
 For each Model, we specify the store that it belongs to. We created a store called `devdb` above, so we'll use that.
 
 ```js
-// api/models/User.js
+// api/models/Company.js
 
   static config () {
     return {
-      resolver: UserResolver,
-      store: 'devdb'
+      resolver: CompanyResolver,
+      store: 'devdb'    // <----------
     }
   }
 ```
 
-### Define the Schema
+### <a href="#define-the-schema">Define the Schema</a>
 
-The Knex Trailpack passes in a [`table`](http://knexjs.org/#Schema-table) argument to the schema method to which we will attach database column definitions according to the [Knex Schema API](http://knexjs.org/#Schema). For our `User` Model, we'll add the following fields:
+The Knex Trailpack passes in a [`table`](http://knexjs.org/#Schema-table) argument to the schema method to which we will attach database column definitions according to the [Knex Schema API](http://knexjs.org/#Schema). For our `Company` Model, we'll add the following fields:
 
 - `id`: integer, unique, auto increment, primary key
 - `email`: string, unique, add index for searching
 
 ```js
-// api/models/User.js
+// api/models/Company.js
+
+module.exports = class Company extends Model {
+  // ...
 
   static schema (table) {
     table.increments('id').primary()
-    table.string('email').unique().index()
-    table.integer('cats')
-    table.boolean('hasCats')
+    table.string('cik').unique().index()
+    table.string('name')
+    table.string('description')
+    table.string('city')
+    table.string('state')
+    table.string('street')
+    table.string('zip')
+    table.boolean('isEvil')
+  }
+
+  /**
+   * The CIK must always be exactly ten digits; left-pad with zeroes
+   * if less than ten digits.
+   * @see https://en.wikipedia.org/wiki/Central_Index_Key
+   */
+  static formatCIK (cik) {
+    return leftPad(cik, (10 - cik.length), '0')
+  }
+
+  /**
+   * @override
+   */
+  get cik () {
+    return Company.formatCIK(this.data.cik)
   }
 ```
 
@@ -139,26 +163,28 @@ The Knex Trailpack passes in a [`table`](http://knexjs.org/#Schema-table) argume
 Create a new Model, and persist it into our datastore.
 
 ```js
-// api/services/UserService.js
+// api/services/CompanyService.js
 
-module.exports = class UserService extends Service {
+module.exports = class CompanyService extends Service {
 
   /**
-   * Create a new User given their email, and number of cats they own
+   * Create a new Company, and store a flag that indicates whether it is evil
+   * @param rss Object  an object that represents the RSS feed from EDGAR
    */
-  registerUser (email, cats) {
-    const user = new this.models.User({
-      hasCats: (cats > 0),
-      email,
-      cats
+  registerCompany (rss) {
+    const blacklist = this.app.policies.ReportPolicy.blacklist
+
+    const company = new this.models.Company({
+      ...values,
+      isEvil: blacklist.includes(values.cik)
     })
 
-    // persist "user" to database
-    return user.save()
+    // persist "company" to database
+    return company.save()
   }
 }
 ```
 
-Simple enough: instantiate a `new this.models.User({ ... })`, and then save it. But, where does `.save()` come from? In the next section, we walk through how Resolvers handle the work of storing and retrieving data to/from the data store.
+We instantiate a `new this.models.Company({ ... })`, and then save it. In the process, we also check [`ReportPolicy.blacklist`](./policy#create-policy) to see if we should set the `isEvil` flag. But, where does `.save()` come from, and how does it work? In the next section, we walk through how Resolvers handle the work of storing and retrieving data to/from the data store.
 
 ### Next: [Resolver](resolver.md)

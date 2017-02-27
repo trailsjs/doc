@@ -20,7 +20,7 @@ Similar to Controllers and Services, we'll create a new Policy using the Trails 
 // api/policies/ReportPolicy.js
 
 module.exports = class ReportPolicy extends Policy {
-  static get blacklist () {
+  get blacklist () {
     return [
       '0000072859',   // Enron
       '0000723527',   // WorldCom
@@ -34,7 +34,7 @@ module.exports = class ReportPolicy extends Policy {
   isEvil (request) {
     const { cik } = request.params
 
-    if (ReportPolicy.blacklist.includes(cik)) {
+    if (this.blacklist.includes(cik)) {
       throw new boom.badRequest('That company is evil!')
     }
   }

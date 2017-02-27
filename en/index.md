@@ -1,6 +1,6 @@
 # Table of Contents
 
-If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [**Start**](/doc/en//start)!
+If you are new to Trails, these topics are approximately in order. Begin your Journey by clicking [**Start**](/doc/en/start)!
 
 1. [Start](/start)
 2. [Build](/doc/en/build/)
@@ -18,6 +18,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [i18n](/doc/en/config/i18n)
   - [web](/doc/en/config/web)
 4. [Test](/doc/en/test/)
+  - [Introduction](/doc/en/test/intro)
   - [Unit Testing](/doc/en/test/unit)
   - [Integration Testing](/doc/en/test/integration)
 5. [Debug](/doc/en/debug/)
@@ -42,6 +43,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Model](/doc/en/ref/model)
   - [Resolver](/doc/en/ref/resolver)
   - [Policy](/doc/en/ref/policy)
+  - [Reserved Keywords](/doc/en/ref/reserved)
 10. [About Trails](/doc/en/about/)
   - [What is Trails?](/doc/en/about/trails)
   - [Design Theory](/doc/en/about/theory)

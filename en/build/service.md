@@ -6,66 +6,75 @@ Services are invoked by Controller handlers to perform more complex business log
 
 ## Query an External Service
 
-Let's build a simple web service that returns the latest version of some popular softtware packages as JSON. As in the previous section, we'll create a Controller that handles the client request/response. We'll additionally create a Service that the Controller will invoke to query the version of a package.
+Let's build a simple web service that returns the annual report of a given company as a JSON object. As in the previous section, we'll need a Controller to handle the request/response cycle, but here we'll additionally create a Service that the Controller will invoke to perform some more customized business logic.
 
-#### `yo trails:controller VersionController`
-#### `yo trails:service VersionService`
+#### `yo trails:controller ReportController`
+#### `yo trails:service ReportService`
 
 ### Implement the Controller
 
 ```js
-// api/controller/VersionController.js
+// api/controller/ReportController.js
 
-module.exports = class VersionController extends Controller {
+module.exports = class ReportController extends Controller {
 
   /**
-   * Return the latest version of a given software package
-   * @param request.params.packageName
+   * Return the most recent annual report of the given company
+   * @param request.params.cik  The Central Index Key of the company
    */
   getLatest (request, reply) {
-    const { packageName }  = request.params
+    const { cik }  = request.params
 
-    this.services.VersionService.getLatest(packageName)
-      .then(version => {
-        return reply({
-          [packageName]: `v${version}`
-        })
-      })
+    if (!/^\d*$/.test(cik)) {
+      return reply(boom.badRequest('CIK is not valid'))
+    }
+
+    this.services.ReportService.getLatest(cik)
+      .then(report => reply(report))
       .catch(err => reply(err))
   }
 }
 ```
 
-### Implement the Service
+### <a href="#implement-reportservice">Implement `ReportService`</a>
 
-`VersionService` will request version information from [semver.io](http://semver.io), an external web service that hosts version information on nodejs, npm, yarn, and other tools. Separating out this business logic from the request-handling duties of the Controller is a good practice for separating concerns and organizing code.
+`ReportService` will query the [SEC EDGAR](https://www.sec.gov/edgar/searchedgar/cik.htm) service. Their web service returns an RSS feed, which we'll parse into JSON. `getLatest(cik)` will determine the most recent entry in the feed, and return it. Separating out this business logic from the request-handling duties of the Controller is a good practice for separating concerns and organizing code.
 
 ```js
-// api/services/VersionService.js
+// api/services/ReportService.js
 
 const request = require('request-promise')
+const qs = require('querystring')
 
-module.exports = class VersionService extends Service {
+module.exports = class ReportService extends Service {
 
-  static get supportedPackages () {
-    return [
-      'node',
-      'npm',
-      'yarn',
-      'nginx'
-    ]
+  /**
+   * Query the SEC EDGAR database, retrieve the report, and convert to JSON.
+   * @param cik
+   */
+  getLatest (cik) {
+    return this.getEdgarListings()
+      .then(list => list.sort(f => (0 - f.filingDate.valueOf()))
+      .then(([ filing ]) => filing)
   }
 
   /**
-   * Query the semver.io service for the latest version of a specified package name
-   * @param packageName
+   * Get list of annual report filings from the SEC EDGAR database for the
+   * given company. In SEC lingo, these are called "10-K" reports.
    */
-  getLatest (packageName) {
-    if (!VersionService.supportedPackages.find(packageName)) {
-      throw new Error(`${packageName} not supported`)
-    }
+  getEdgarListings (cik) {
+    const edgarAtomUrl = 'https://www.sec.gov/cgi-bin/browse-edgar'
+    const query = { action: 'getcompany', CIK: cik, type: '10-K', output: 'atom' }
 
-    return request(`semver.io/${packageName}`)
+    return request(`${edgarAtomUrl}?${query}`)
+      .then(feed => this.parseFeed(feed))
+  }
+
+  /**
+   * Parse the RSS feed and convert to JSON
+   */
+  parseFeed (feed) {
+    // ...
   }
 }
 ```
@@ -77,38 +86,54 @@ module.exports = class VersionService extends Service {
 module.exports = [
   {
     method: [ 'GET' ],
-    path: '/version/{packageName}',
-    handler: 'VersionController.getLatest'
+    path: '/report/{cik}'
+    handler: 'ReportController.getLatest'
   }
 ]
 ```
 
-### Try it!
+### Example Request/Reponse
 
-- Request: `GET /version/node`
-- Response: 
+- Request: `GET /report/0001467858` ([General Motors](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001467858&owner=exclude&count=40))
+- Response:
   ```json
   {
-    "node": "v7.5.0"
+    "size": "23 MB",
+    "filingDate": "2017-02-07",
+    "company": {
+      "name": "General Motors Co",
+      "state": "MI",
+      // ...
+    },
+    // ...
   }
   ```
 
-- Request: `GET /version/npm`
+- Request: `GET /report/0000928465` ([Amcon Distributing](https://www.sec.gov/cgi-bin/viewer?action=view&cik=928465&accession_number=0001558370-16-009684&xbrl_type=v))
 - Response: 
   ```json
   {
-    "node": "v4.2.0"
+    "size": "7 MB",
+    "filingDate": "2016-11-08",
+    "company": {
+      "name": "AMCON DISTRIBUTING CO",
+      "state": "NE",
+      // ...
+    },
+    // ...
   }
   ```
 
-- Request: `GET /version/fancypackage`
+- Request: `GET /report/enron`
 - Response: 
   ```json
   {
-    "statusCode": 500,
-    "error": "fancypackage not supported",
+    "statusCode": 400,
+    "error": "CIK is not valid",
     "message": ""
   }
   ```
+
+We can get annual reports from the Securities and Exchange Commission in JSON! Very exciting, right? 
 
 ### Next: [Policy](policy.md)

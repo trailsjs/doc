@@ -6,7 +6,7 @@
 
 First, we need to tie off some loose ends from our previous guide on Models. What is `CompanyResolver`? And how does `user.save()` work?
 
-## <a href="#example-companyresolver">`CompanyResolver`</a>
+## <a href="#companyresolver">`CompanyResolver`</a>
 
 When creating new Models (via `yo:trails model`), the generator looks at the store config (`config.stores`) to figure out which store the Model will belong to. In our example, we only configured one store. When multiple stores are configured, the generator will ask to which store the new Model will belong.
 
@@ -29,7 +29,7 @@ The `Model` and `Resolver` superclasses (from which `Company` and `CompanyResolv
 
 ### Override Existing Query
 
-Let's override the existing `.save()` method so that we can store our parsed RSS feed from [2.2 Service](./service#implement-reportservice) directly. For reference, here's a snippet from the RSS XML:
+Let's override the existing `.save()` method so that we can store our parsed RSS feed from [2.2 Service](./service#implement-reportservice) directly.
 
 For reference, here's a snippet of the parsed RSS feed for General Motors:
 

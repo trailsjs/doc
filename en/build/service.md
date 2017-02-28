@@ -46,21 +46,21 @@ For reference, here's a snippet of the RSS feed for General Motors:
 
 ```xml
 <company-info>
-	<addresses>
-		<address type="business">
-			<city>DETROIT</city>
-			<phone>313.556.5000</phone>
-			<state>MI</state>
-			<street1>300 RENAISSANCE CENTER</street1>
-			<zip>48265-3000</zip>
-		</address>
-	</addresses>
-	<assigned-sic>3711</assigned-sic>
-	<assigned-sic-desc>MOTOR VEHICLES &amp;amp; PASSENGER CAR BODIES</assigned-sic-desc>
-	<cik>0001467858</cik>
-	<conformed-name>General Motors Co</conformed-name>
-	<fiscal-year-end>1231</fiscal-year-end>
-	<state-location>MI</state-location>
+  <addresses>
+    <address type="business">
+      <city>DETROIT</city>
+      <phone>313.556.5000</phone>
+      <state>MI</state>
+      <street1>300 RENAISSANCE CENTER</street1>
+      <zip>48265-3000</zip>
+    </address>
+  </addresses>
+  <assigned-sic>3711</assigned-sic>
+  <assigned-sic-desc>MOTOR VEHICLES &amp;amp; PASSENGER CAR BODIES</assigned-sic-desc>
+  <cik>0001467858</cik>
+  <conformed-name>General Motors Co</conformed-name>
+  <fiscal-year-end>1231</fiscal-year-end>
+  <state-location>MI</state-location>
 </company-info>
 ```
 

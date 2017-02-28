@@ -26,8 +26,7 @@ In most of the Datastore Trailpacks, default Resolvers are provided that impleme
 
 The `Model` and `Resolver` superclasses (from which `Company` and `CompanyResolver` inherit) bind together and expose these four operations as methods on every `Company` subclass by default. The `criteria` will vary in format by store -- your chosen Datastore Trailpack will document how its criteria are used.
 
-
-### Override Existing Query
+### <a href="#override-existing-query">Override Existing Query</a>
 
 Let's override the existing `.save()` method so that we can store our parsed RSS feed from [2.2 Service](./service#implement-reportservice) directly.
 
@@ -94,23 +93,39 @@ module.exports = class ReadOnlyModel extends Model {
 }
 ```
 
-### Custom Queries
+### <a href="#custom-queries">Custom Queries</a>
 
-Of course, we'll often want to do more specific things other than the four common CRUD (create, read, update, delete) operations. 
+Of course, we'll often want to do more specific things other than the four common CRUD (create, read, update, delete) operations. In the previous section, we disabled the `.update()` method, but occasionally a company will turn evil. 
 
-...
+```js
+// api/resolvers/CompanyResolver.js
+
+  /**
+   * Relocate the company to a new address. If the company is moving to an
+   * off-shore tax haven, it becomes evil.
+   */
+  relocate (criteria, newAddress) {
+    const patch = { ...newAddress }
+
+    if (/Grand Cayman/i.test(newAddress.street1)) {
+      patch.isEvil = true
+    }
+
+    return this.store('company').where(criteria).update(patch)
+  }
+```
 
 Now, we expose this functionality to the application by implementing the corresponding method on `CompanyModel`:
 
 ```js
 // api/models/Company.js
 
-  /**
-   * Insert a new Company record
-   * @override
-   */
-  save () {
-    this.resolver.adoptCat(this.id)
+module.exports = class Company extends Model {
+  // ... 
+
+  relocate (newAddress) {
+    return this.resolver.relocate(this, newAddress)
   }
+}
 ```
 

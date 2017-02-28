@@ -225,7 +225,22 @@ module.exports = class CompanyResolver extends KnexResolver {
 ```
 
 ### <a href="#resolver-class">Resolver Class</a>
+
+`CompanyResolver` is summarized below in pseudo-code. See [2.5 Resolver](../build/resolver#override-existing-query) for full class definition.
+
+```js
+// api/resolvers/CompanyResolver.js
+
+module.exports = class CompanyResolver extends KnexResolver {
+  save () {
+    // ...
+  }
+
+}
+```
+
 ### <a href="#resolver-test-suite">Resolver Test Suite</a>
+
 ### <a href="#create-a-resolver-unit-test">Create a Resolver Unit Test</a>
 
 ### Next: [Integration Testing](integration.md)

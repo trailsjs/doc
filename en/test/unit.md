@@ -155,6 +155,10 @@ module.exports = class Company extends Model {
    *  - street (string)
    *  - zip (string)
    */
+
+  formatCIK (cik) {
+    // ...
+  }
 }
 ```
 
@@ -166,12 +170,11 @@ module.exports = class Company extends Model {
 const assert = require('assert')
 
 describe('Company', () => {
-  let instance, Company
+  let Company
   before(() => {
     assert(global.app.models.Company)
 
     Company = global.app.models.Company
-    instance = new Company()
   })
 })
 ```
@@ -214,15 +217,7 @@ Just execute `npm test` in your console, and you'll see an output like this:
 
 ## <a href="#testing-resolvers">Testing Resolvers</a>
 
-```js
-// api/resolvers/CompanyResolver.js
-
-module.exports = class CompanyResolver extends KnexResolver {
-  save () {
-    this.store.insert(
-  }
-}
-```
+In a Trails application, Resolver methods are only ever invoked by the Models they are coupled with. As such, Resolvers tests occur within the respective Model test suite.
 
 ### <a href="#resolver-class">Resolver Class</a>
 
@@ -232,15 +227,65 @@ module.exports = class CompanyResolver extends KnexResolver {
 // api/resolvers/CompanyResolver.js
 
 module.exports = class CompanyResolver extends KnexResolver {
+
+  /**
+   * @override
+   * Extract and format the company data from the RSS feed object, and insert
+   * a new Company record.
+   */
   save () {
     // ...
   }
 
+  /**
+   * Relocate the company to a new address. If the company is moving to an
+   * off-shore tax haven, it becomes evil.
+   */
+  relocate (newAddress) {
+    // ...
+  }
 }
 ```
 
-### <a href="#resolver-test-suite">Resolver Test Suite</a>
-
 ### <a href="#create-a-resolver-unit-test">Create a Resolver Unit Test</a>
+
+```js
+// test/unit/models/Company.test.js
+
+const assert = require('assert')
+
+describe('Company', () => {
+  // ...
+
+  describe('#relocate', () => {
+
+    it('should update the Company address', () => {
+      const company = new Company({ cik: '0000000000' })
+      return company.relocate({ city: 'Norfolk', state: 'VA' })
+        .then(company => {
+          assert.equals(company.address.city', 'Norfolk')
+        })
+    })
+
+  })
+
+  describe('#save', () => {
+    it('should accept an RSS feed object and save it', () => {
+
+      const rssObject = ...
+      const company = new Company({ cik: '0000001234' })
+      return company.save()
+        .then(company => {
+          return Company.get({ cik: '0000001234' })
+        })
+        .then(newCompany => {
+          assert(newCompany)
+          
+        })
+    })
+  })
+
+})
+```
 
 ### Next: [Integration Testing](integration.md)

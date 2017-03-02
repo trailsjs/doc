@@ -92,7 +92,7 @@ To store this in our database, we'll want to parse it into JSON, so that it look
 // api/services/ReportService.js
 
 const request = require('request-promise')
-const qs = require('querystring')
+//const qs = require('querystring')
 
 module.exports = class ReportService extends Service {
 
@@ -111,10 +111,11 @@ module.exports = class ReportService extends Service {
    * given company. In SEC lingo, these are called "10-K" reports.
    */
   getEdgarListings (cik) {
-    const edgarAtomUrl = 'https://www.sec.gov/cgi-bin/browse-edgar'
-    const query = { action: 'getcompany', CIK: cik, type: '10-K', output: 'atom' }
+    //const edgarAtomUrl = 'https://www.sec.gov/cgi-bin/browse-edgar'
+    //const query = { action: 'getcompany', CIK: cik, type: '10-K', output: 'atom' }
+    const edgarAtomUrl = 'https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK='+cik+'&output=atom'
 
-    return request(`${edgarAtomUrl}?${query}`)
+    return request(`${edgarAtomUrl}`)
       .then(feed => this.parseFeed(feed))
   }
 
@@ -122,8 +123,8 @@ module.exports = class ReportService extends Service {
    * Parse the RSS feed and convert to JSON
    */
   parseFeed (feed) {
-    // Lets return something
-    return feed.substring(2, 5)
+    // Lets return first line of the feed
+    return {feedStart: feed.substring(0, 44)}
   }
 }
 ```

@@ -102,7 +102,7 @@ module.exports = class ReportService extends Service {
    */
   getLatest (cik) {
     return this.getEdgarListings(cik)
-      .then(list => list.sort(f => (0 - f.filingDate.valueOf())))
+      //.then(list => list.sort(f => (0 - f.filingDate.valueOf())))
       .then(([ filing ]) => filing)
   }
 

@@ -10,7 +10,8 @@ As in previous sections, this section continues the example of the Annual Report
 
 ## <a href="#testing-controllers">Testing Controllers</a>
 
-Unit test stub files are also created when you generate a new Trails Service. We'll use the `ReportController` example from our walkthrough on building Services. [2.2. Service](../build/service).
+Unit test stub files are also created when you generate a new Trails Service. We'll use the `ReportController` example from our walkthrough on building 
+[2.2. Service](../build/service).
 
 ### <a href="#controller-class">Controller Class</a>
 
@@ -38,7 +39,7 @@ const assert = require('assert')
 describe('ReportController', () => {
   let ReportController
   before(() => {
-    ReportController = global.app.services.ReportController
+    ReportController = global.app.controllers.ReportController
   })
 })
 ```

@@ -49,17 +49,12 @@ module.exports = class TimePolicy extends Policy {
 Let's say we want this Policy to apply to `VersionController.getLatest` that we built in the [previous section](service.md). We configure this Policy as a *precondition* of the `VersionController.getLatest` route:
 
 ```js
-// config/routes.js
+// config/policies.js
 
 module.exports = [
   {
-    method: [ 'GET' ],
-    path: '/version/{packageName}',
-    handler: 'VersionController.getLatest',
-    config: {
-      pre: [
-        'TimePolicy.isDuringBusinessHours'
-      ]
+    VersionController: {
+      getLatest: ['TimePolicy.isDuringBusinessHours']
     }
   }
 ]

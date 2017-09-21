@@ -1,4 +1,4 @@
-# Docker Clustering
+# Docker Orchestration
 
 If you have your api packaged in a docker container, you can use an orchestration platform to scale the application.
 

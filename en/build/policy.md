@@ -65,6 +65,20 @@ module.exports = [
 ]
 ```
 
+. . . or
+
+```js
+// config/policies.js
+
+module.exports = [
+  {
+    VersionController: {
+      getLatest: ['TimePolicy.isDuringBusinessHours']
+    }
+  }
+]
+```
+
 Now, requests to `/version/{packageName}` will first be validated by `TimePolicy`.
 
 ### Try it!

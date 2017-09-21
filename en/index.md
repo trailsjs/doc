@@ -26,6 +26,7 @@ If you are new to Trails, these topics are approximately in order. Begin your Jo
   - [Providers](deploy/providers.md)
   - [Security](deploy/security.md)
   - [Scaling](deploy/scaling.md)
+  - [Docker](deploy/docker.md)
 7. [Extend](extend/)
   - [Trailpacks](extend/trailpack.md)
   - [Re-usable Services](extend/service.md)

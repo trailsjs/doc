@@ -1,4 +1,5 @@
 This example assuming you are using a the follwing database configuration
+
 _config/database.js_
 ```js
 module.exports = {

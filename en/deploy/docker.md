@@ -1,6 +1,9 @@
-# 6.5 Docker
+# 6.5 [Docker](https://www.docker.com/what-docker)
 
-This example assuming you are using a the follwing database configuration
+Docker is the worlds leading containerization platform. It automates the tasks of setting up and
+configuring development and production environments. You can learn more about Docker at [docker.com](https://www.docker.com/).
+
+This example assumes you are using a the following database configuration
 
 _config/database.js_
 ```js

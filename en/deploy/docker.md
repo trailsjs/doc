@@ -56,6 +56,7 @@ ENTRYPOINT ["/sbin/tini", "--", "node", "/app/server.js"]
 
 ### 2. Add the following scripts to your `package.json`
 
+_package.json_
 ```json
 {
  "scripts": {

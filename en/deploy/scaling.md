@@ -1,6 +1,8 @@
-# Docker
+# Docker Clustering
 
 If you have your api packaged in a docker container, you can use an orchestration platform to scale the application.
+
+To learn how to build a proper docker container, refer to [Docker](docker.md).
 
 ## [Docker Swarm](https://docs.docker.com/engine/swarm/)
 

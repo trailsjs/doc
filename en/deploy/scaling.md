@@ -29,9 +29,9 @@ docker stack deploy --compose-file ./docker-compose.yml trails
 docker service scale trails_some-trails=3
 ```
 
-#### [Rancher](http://rancher.com/)
+## [Rancher](http://rancher.com/)
 
-##### Without Internal Load Balancer
+### Without Internal Load Balancer
 
 _docker-compose.yml_
 ```yml
@@ -53,7 +53,7 @@ some-trails:
   scale: 3
 ```
 
-##### With Internal HaProxy Load Balancer
+### With Internal HaProxy Load Balancer
 
 _docker-compose.yml_
 ```yml
@@ -91,6 +91,6 @@ load-balancer:
       target_port: 3000
 ```
 
-#### [Kubernetes](https://kubernetes.io/)
+## [Kubernetes](https://kubernetes.io/)
 
-#### [Mesos](http://mesos.apache.org/)
+## [Mesos](http://mesos.apache.org/)

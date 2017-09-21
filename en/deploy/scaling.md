@@ -1,10 +1,12 @@
-# Docker Orchestration
+# 6.4 Scaling
+
+## Docker Orchestration
 
 If you have your api packaged in a docker container, you can use an orchestration platform to scale the application.
 
 This example assumes you setup docker in the manner specified in the trails [Docker tutorial](docker.md).
 
-## [Docker Swarm](https://docs.docker.com/engine/swarm/)
+### [Docker Swarm](https://docs.docker.com/engine/swarm/)
 
 _docker-compose.yml_
 ```yml
@@ -29,9 +31,9 @@ docker stack deploy --compose-file ./docker-compose.yml trails
 docker service scale trails_some-trails=3
 ```
 
-## [Rancher](http://rancher.com/)
+### [Rancher](http://rancher.com/)
 
-### Without Internal Load Balancer
+#### Without Internal Load Balancer
 
 _docker-compose.yml_
 ```yml
@@ -53,7 +55,7 @@ some-trails:
   scale: 3
 ```
 
-### With Internal HaProxy Load Balancer
+#### With Internal HaProxy Load Balancer
 
 _docker-compose.yml_
 ```yml
@@ -91,6 +93,6 @@ load-balancer:
       target_port: 3000
 ```
 
-## [Kubernetes](https://kubernetes.io/)
+### [Kubernetes](https://kubernetes.io/)
 
-## [Mesos](http://mesos.apache.org/)
+### [Mesos](http://mesos.apache.org/)

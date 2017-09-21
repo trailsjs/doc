@@ -2,7 +2,7 @@
 
 If you have your api packaged in a docker container, you can use an orchestration platform to scale the application.
 
-This example assumes you setup docker in the manner specified at [Docker](docker.md).
+This example assumes you setup docker in the manner specified in [the trails Docker tutorial](docker.md).
 
 ## [Docker Swarm](https://docs.docker.com/engine/swarm/)
 

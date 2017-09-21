@@ -18,7 +18,7 @@ module.exports = {
 };
 ```
 
-1. Create a docker file in the root of your project
+## 1. Create a docker file in the root of your project
 
   _Dockerfile_
   ```docker
@@ -54,7 +54,7 @@ module.exports = {
   ENTRYPOINT ["/sbin/tini", "--", "node", "/app/server.js"]
   ```
 
-2. Add the following scripts to your `package.json`
+## 2. Add the following scripts to your `package.json`
 
   ```json
   {
@@ -66,7 +66,7 @@ module.exports = {
   }
   ```
 
-3. Build your container
+## 3. Build your container
 
   ```sh
   npm run build

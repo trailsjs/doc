@@ -67,7 +67,7 @@ _package.json_
 {
  "scripts": {
     "build": "docker build -t trailsjs/trails:latest -f ./Dockerfile .",
-    "push": "docker push -t trailsjs/trails:latest",
+    "push": "docker push trailsjs/trails:latest",
     "run": "docker run --name some-trails --rm --link some-mongo:db -p 3000:3000 trailsjs/trails:latest"
   }
 }

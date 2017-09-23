@@ -16,6 +16,8 @@ Let's build a simple web service that returns the latest version of some popular
 ```js
 // api/controller/VersionController.js
 
+const Controller = require('trails/controller')
+
 module.exports = class VersionController extends Controller {
 
   /**
@@ -25,7 +27,7 @@ module.exports = class VersionController extends Controller {
   getLatest (request, reply) {
     const { packageName }  = request.params
 
-    this.services.VersionService.getLatest(packageName)
+    this.app.services.VersionService.getLatest(packageName)
       .then(version => {
         return reply({
           [packageName]: `v${version}`
@@ -40,8 +42,14 @@ module.exports = class VersionController extends Controller {
 
 `VersionService` will request version information from [semver.io](http://semver.io), an external web service that hosts version information on nodejs, npm, yarn, and other tools. Separating out this business logic from the request-handling duties of the Controller is a good practice for separating concerns and organizing code.
 
+We will use request-promise module for http request. To install this module, simply do `npm install --save request-promise` 
+
+Content of the service file:
+
 ```js
 // api/services/VersionService.js
+
+const Service = require('trails/service')
 
 const request = require('request-promise')
 
@@ -61,11 +69,11 @@ module.exports = class VersionService extends Service {
    * @param packageName
    */
   getLatest (packageName) {
-    if (!VersionService.supportedPackages.find(packageName)) {
+    if (!VersionService.supportedPackages.find(x => x == packageName)) {
       throw new Error(`${packageName} not supported`)
     }
 
-    return request(`semver.io/${packageName}`)
+    return request(`http://semver.io/${packageName}`)
   }
 }
 ```

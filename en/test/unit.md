@@ -263,7 +263,7 @@ describe('Company', () => {
       const company = new Company({ cik: '0000000000' })
       return company.relocate({ city: 'Norfolk', state: 'VA' })
         .then(company => {
-          assert.equals(company.address.city', 'Norfolk')
+          assert.equals(company.address.city, 'Norfolk')
         })
     })
 
